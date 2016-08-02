@@ -1,23 +1,280 @@
 ---
-layout: default
 ---
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<title>{{ site.title }}</title> 
 
-<div class="home">
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-  <h1 class="page-heading">Posts</h1>
+	<meta property="og:title" content=": A design &amp; dev conference by Circles Co." />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="http://squaresconference.com/2017" />
+	<meta property="og:image" content="http://squaresconference.com/2017/facebook_icon.png" />
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<link rel="stylesheet" href="http://squaresconference.com/2017/css/screen.css" media="screen" type="text/css" /> 
+	<link rel="stylesheet" href="http://squaresconference.com/2017/css/magnific-popus.css" media="screen" type="text/css" /> 
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+	<link rel="shortcut icon" href="http://squaresconference.com/favicon.ico" type="image/x-icon" /> 
+	<link rel="apple-touch-icon-precomposed" href="http://squaresconference.com/ipad_icon.png" />
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://squaresconference.com/2017/js/anchor.js"></script>
+	<script type="text/javascript" src="http://squaresconference.com/2017/js/infieldlabel.js"></script>
+	<script type="text/javascript" src="http://squaresconference.com/2017/js/bootstrap.scrollspy.js"></script>
+	<script type="text/javascript" src="http://squaresconference.com/2017/js/waypoint.js"></script>
+	<script type="text/javascript" src="http://squaresconference.com/2017/js/jquery.magnific-popup.js"></script> 
+	<script type="text/javascript" src="http://squaresconference.com/2017/js/emails-and-forms.js"></script>
 
+	<script src="https://use.typekit.net/yde4jdg.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head> 
+ 
+<body class="home">
+
+<a href="javascript: void(0);" id="btnMenu">
+	<div id="nav-icon4">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</a>
+
+<div id="divTop" class="header_wrap relative bg-image" style="background-image: url(http://squaresconference.com/2017/images/hero-home.jpg);">
+	<div class="header">
+		<h3 class="hero-date rotate-right small-titles">April 26-28, 2017</h3>
+		<h3 class="hero-location rotate-right small-titles">Grapevine, TX</h3>
+		<div class="header-content">
+						<div class="register-wrap">
+				<h5 class="pad-l-80">Be Square. Register today.</h5>
+				<a href="http://squaresconference.com/register" class="button-register"><img src="http://squaresconference.com/2017/images/black-arrow.svg" alt="Register Today" /></a>
+				<div class="push"></div>
+			</div>
+			<div class="push"></div>
+		</div>
+		<h6>Photo by Cory Hale</h6>
+	</div>
+	<div class="squares-logo">
+			<div class="squares-empty"></div>
+			<div class="squares-container">
+					<img src="http://squaresconference.com/2017/images/logo-squares.png" alt="Squares Conference" />
+			</div>
+	</div>
+	<div class="red-border">
+					<h4>A design & dev<br />conference by <a href="http://circlesco.com" target="_blank">Circles Co.</a><br /><span>creators of Circles Conference</span></h4>
+				<div class="squares-empty"></div>
+		<div class="squares-container">
+		</div>
+	</div>
+	<div class="push"></div>
+	<a href="#divArrow" class="anchorLink btn-arrow"><img src="http://squaresconference.com/2017/images/btn-arrow.png" alt="View More" /></a>
 </div>
+<div class="content_wrap" id="divArrow">
+	<div class="content">
+
+
+
+
+
+<div class="what-is-squares">
+	<div class="right relative">
+		<div class="what-right pad-80">
+			<p><b>What is Squares?</b> It's a three-day gathering of techies from around the world. Learn from leaders, designers and innovators in both the non-profit and tech community. It's a great place to mingle with others who share the same passions you do.</p>  
+			<h2 class="titles">design, ux, front-end, development, and products</h2>
+		</div>
+		<div class="push"></div>
+	</div>
+	<div class="left relative">
+		<div class="what-left pad-r-80">
+			<div class="quote ta-right marg-b-180">
+				<h2>The best user experience assumes every interface is the one within reach.</h2>
+				<h3 class="small">– cameron moll,<br /><span>founder of Authentic Jobs<br />#squares2016</span></h3>
+			</div>
+			<div class="recap-wrap">
+				<h3>2016 Recap</h3>
+				<a href="https://vimeo.com/168680241" class="popup-video"><img src="http://squaresconference.com/2017/images/btn-play.png" alt="Play 2016 Recap Video" /></a>
+			</div>
+		</div>
+		<div class="push"></div>
+	</div>
+	<div class="push"></div>
+</div>
+
+<div class="home-speakers-wrap pad-tb-180 relative">
+	<div class="section home-speakers relative">
+		<h2 class="small-titles red rotate">Speakers</h2>
+		<div class="panel speaker-panel">
+			<div class="speaker-image relative">
+				<div class="speaker-links">
+					<a href="http://marykatemcdevitt.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
+					<a href="http://twitter.com/marykatemcd" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+				</div>
+				<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
+			</div>
+			<h2>Ismael Burciaga</h2>
+			<h3>director of ux at Nasdaq</h3>
+		</div>
+		<div class="panel speaker-panel second">
+			<div class="speaker-image relative">
+				<div class="speaker-links">
+					<a href="http://marykatemcdevitt.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
+					<a href="http://twitter.com/marykatemcd" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+				</div>
+				<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
+			</div>
+			<h2>Ismael Burciaga</h2>
+			<h3>director of ux at Nasdaq</h3>
+		</div>
+		<div class="panel speaker-panel">
+			<div class="speaker-image relative">
+				<div class="speaker-links">
+					<a href="http://marykatemcdevitt.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
+					<a href="http://twitter.com/marykatemcd" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+				</div>
+				<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
+			</div>
+			<h2>Ismael Burciaga</h2>
+			<h3>director of ux at Nasdaq</h3>
+		</div>
+		<div class="panel speaker-panel last">
+			<div class="speaker-image relative">
+				<div class="speaker-links">
+					<a href="http://marykatemcdevitt.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
+					<a href="http://twitter.com/marykatemcd" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+				</div>
+				<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
+			</div>
+			<h2>Ismael Burciaga</h2>
+			<h3>director of ux at Nasdaq</h3>
+		</div>
+		<div class="push"></div>
+		<h3 class="small-titles grey rotate-right"><a href="http://squaresconference.com/2017/speakers.php">View all speakers</a></h3>
+	</div>
+	<div class="square-border side-right grey"></div>
+</div>
+
+<div class="double relative">
+	<div class="left bg-image relative" style="background-image: url(http://squaresconference.com/2017/images/bg-kim.jpg);">
+		<h6 class="rotate">Photo by Cory Hale</h6>
+	</div>
+	<div class="right relative">
+		<div class="absolute bs pad-120">
+			<div class="quote marg-b-180">
+				<h2>Process is what leads to your outcomes.</h2>
+				<h3 class="small white">– kim bost, <span>product designer at Dropbox • #squares2016</span></h3>
+			</div>
+			<div class="price">
+				<div class="starting-price">
+					<h4>starting at</h4>
+					<h5>$195</h5>
+				</div>
+				<a href="http://squaresconference.com/register" target="_blank" class="button">Register Today</a>
+				<div class="push"></div>
+			</div>
+		</div>
+	</div>
+	<div class="push"></div>
+</div>
+
+	</div> <!-- end .content -->
+</div> <!-- end .content_wrap -->
+
+<div class="sponsor-wrap pad-tb-140 relative">
+	<div class="section no-sponsors pad-b-140 ta-center">
+		<h2 class="titles">become a sponsor</h2>
+		<p class="small-titles"><a href="#" target="_blank">download pdf</a> <span>/</span> <a href="#" target="_blank">get started</a></p>
+	</div>
+	<hr class="divider black" />
+	<div class="section pad-t-140">
+		<div class="partner-logos relative">
+			<h2 class="small-titles rotate">Partners</h2>
+			<a href="http://aigadfw.org" target="_blank"><img src="http://squaresconference.com/2017/images/p-aiga.png" alt="AIGA DFW" /></a>
+			<a href="http://printedthreads.com" target="_blank"><img src="http://squaresconference.com/2017/images/p-printedthreads.png" alt="Printed Threads" /></a>
+			<a href="http://foxypropaganda.com" target="_blank"><img src="http://squaresconference.com/2017/images/p-foxy.png" alt="Foxy Propaganda" /></a>
+			<a href="http://www.kindsnacks.com" target="_blank"><img src="http://squaresconference.com/2017/images/p-kind.png" alt="KIND Healhty Snacks" /></a>
+			<a href="http://okpaper.com" target="_blank"><img src="http://squaresconference.com/2017/images/p-ok.png" alt="OLMSTED-KIRK PAPER" /></a>
+			<div class="push"></div>
+		</div>
+	</div>
+	<div class="square-border side-left white"></div>
+</div>
+
+<div class="update-wrap bg-white">
+	<div class="section pad-tb-180">
+		<div class="email-wrap left">
+			<h2 class="titles">Stay Updated</h2>
+			<div class="email relative">
+				<div id="divEmail">
+					<form action="http://circlescompany.createsend.com/t/j/s/mhdcu/" method="post" id="formEmail">
+						<label for="email-signup" class="infieldlabel">email address</label>
+						<input type="text" name="cm-mhdcu-mhdcu" id="email-signup" class="email-input" />
+						<input type="submit" name="submit" value="join" class="email-button" />
+					</form>
+				</div>
+				<div id="divEmailConfirmation">
+					<h2>Thank You</h2>
+				</div>
+			</div>
+			<div class="push"></div> 
+		</div>
+		<div class="or left">
+			<h2 class="titles ta-center">or</h2>
+		</div>
+		<a href="http://squaresconference.com/register" target="_blank" class="button bs">Register Today</a>
+		<div class="push"></div>
+	</div>  
+</div>
+
+<div class="bottom">
+	<div class="section relative">
+		<div class="circles-logo"><img src="http://squaresconference.com/2017/images/logo-squares-small.png" alt="Squares" /></div>
+		<hr class="marg-b-80 marg-t-80 divider" />
+		<ul class="footer-meta">
+			<li>April 26-28, 2017</li>
+			<li class="middle"><span>Grapevine, TX</span></li>
+			<li><a href="http://squaresconference.com/register" target="_blank">Register Today</a></li>
+		</ul>
+		<div class="circles-half"><img src="http://squaresconference.com/2017/images/squares-half.png" alt="Squares" /></div>
+	</div>
+</div>
+<div class="footer">
+	<p class="copyright">&copy; Copyright 2016 Circles Company. All rights reserved. <a href="/refund-policy" target="_blank">Refund Policy</a>&nbsp;/&nbsp;<a href="/conduct" target="_blank">Code of Conduct</a>&nbsp;/&nbsp;<a href="mailto:hello@squaresconference.com" target="_blank">Contact Us</a></p>
+	<p class="copyright right">Designed by Ismael Burciaga of <a href="http://reblventures.com" target="_blank">REBL</a></p>
+	<div class="push"></div>
+</div>
+
+<div class="menu-wrapper pad-20" id="menuOverlay">
+	<div class="menu-wrapper-2">
+		<div class="menu-wrap">
+			<h2 class="title-menu">Menu</h2>
+			<div class="menu-content">
+				<ul class="right">
+					<li><a href="http://squaresconference.com/2017" class="anchorLink menuLink">Home</a></li>
+					<li><a href="http://squaresconference.com/2017/speakers.php" class="anchorLink menuLink">Speakers</a></li>
+					<li><a href="http://squaresconference.com/2017/venue.php" class="anchorLink menuLink">Venue</a></li>
+					<li><a href="http://squaresconference.com/2017/schedule.php" class="anchorLink menuLink">Schedule</a></li>
+					<li><a href="http://squaresconference.com/2017/about.php" class="anchorLink menuLink">About</a></li>
+				</ul>
+				<div class="left">
+					<p>Squares is a three-day experience for you, the maker. The conference brings designers and makers from across the globe together for the dual purpose of learning from world-changing thinkers and innovators and connecting with one another.</p>
+					<a href="http://squaresconference.com/register" target="_blank" class="button">REGISTER</a>
+					<div class="social-menu">
+						<h2 class="titles serif">Follow Us</h2>
+						<div class="social-menu-icons">
+							<a href="http://twitter.com/squaressconf" target="_blank"><img src="http://squaresconference.com/2017/images/menu-t.png" alt="Twitter" /></a>
+							<a href="http://facebook.com/squaresconference" target="_blank"><img src="http://squaresconference.com/2017/images/menu-fb.png" alt="Facebook" /></a>
+							<a href="http://instagram.com/squaresconf" target="_blank" class="last"><img src="http://squaresconference.com/2017/images/menu-i.png" alt="Instagram" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="push"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body> 
+</html>
