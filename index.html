@@ -1,41 +1,6 @@
 ---
+layout: home
 ---
-
-<!DOCTYPE html> 
-<html lang="en"> 
-	<head> 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-	<title>{{ site.title }}</title> 
-
-	<meta name="description" content="" /> 
-	<meta name="keywords" content="" />
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
-
-	<meta property="og:title" content="{{ site.title }}" />
-	<meta property="og:description" content="" />
-	<meta property="og:url" content="http://squaresconference.com/2017" />
-	<meta property="og:image" content="http://squaresconference.com/2017/facebook_icon.png" />
-
-	<link rel="stylesheet" href="{{ site.url }}/css/screen.css" media="screen" type="text/css" /> 
-	<link rel="stylesheet" href="{{ site.url }}/css/magnific-popus.css" media="screen" type="text/css" /> 
-
-	<link rel="shortcut icon" href="http://squaresconference.com/favicon.ico" type="image/x-icon" /> 
-	<link rel="apple-touch-icon-precomposed" href="http://squaresconference.com/ipad_icon.png" />
-
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="http://squaresconference.com/2017/js/anchor.js"></script>
-	<script type="text/javascript" src="http://squaresconference.com/2017/js/infieldlabel.js"></script>
-	<script type="text/javascript" src="http://squaresconference.com/2017/js/bootstrap.scrollspy.js"></script>
-	<script type="text/javascript" src="http://squaresconference.com/2017/js/waypoint.js"></script>
-	<script type="text/javascript" src="http://squaresconference.com/2017/js/jquery.magnific-popup.js"></script> 
-	<script type="text/javascript" src="http://squaresconference.com/2017/js/emails-and-forms.js"></script>
-
-	<script src="https://use.typekit.net/yde4jdg.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	</head> 
- 
-<body class="home">
-
 <a href="javascript: void(0);" id="btnMenu">
 	<div id="nav-icon4">
 		<span></span>
@@ -44,14 +9,14 @@
 	</div>
 </a>
 
-<div id="divTop" class="header_wrap relative bg-image" style="background-image: url(http://squaresconference.com/2017/images/hero-home.jpg);">
+<div id="divTop" class="header_wrap relative bg-image" style="background-image: url('images/hero-home.jpg');">
 	<div class="header">
 		<h3 class="hero-date rotate-right small-titles">April 26-28, 2017</h3>
 		<h3 class="hero-location rotate-right small-titles">Grapevine, TX</h3>
 		<div class="header-content">
 						<div class="register-wrap">
 				<h5 class="pad-l-80">Be Square. Register today.</h5>
-				<a href="http://squaresconference.com/register" class="button-register"><img src="http://squaresconference.com/2017/images/black-arrow.svg" alt="Register Today" /></a>
+				<a href="http://squaresconference.com/register" class="button-register"><img src="images/black-arrow.svg" alt="Register Today" /></a>
 				<div class="push"></div>
 			</div>
 			<div class="push"></div>
@@ -61,17 +26,17 @@
 	<div class="squares-logo">
 			<div class="squares-empty"></div>
 			<div class="squares-container">
-					<img src="http://squaresconference.com/2017/images/logo-squares.png" alt="Squares Conference" />
+					<img src="images/logo-squares.png" alt="Squares Conference" />
 			</div>
 	</div>
 	<div class="red-border">
-					<h4>A design & dev<br />conference by <a href="http://circlesco.com" target="_blank">Circles Co.</a><br /><span>creators of Circles Conference</span></h4>
+					<h4>A design &amp; dev<br />conference by <a href="http://circlesco.com" target="_blank">Circles Co.</a><br /><span>creators of Circles Conference</span></h4>
 				<div class="squares-empty"></div>
 		<div class="squares-container">
 		</div>
 	</div>
 	<div class="push"></div>
-	<a href="#divArrow" class="anchorLink btn-arrow"><img src="http://squaresconference.com/2017/images/btn-arrow.png" alt="View More" /></a>
+	<a href="#divArrow" class="anchorLink btn-arrow"><img src="images/btn-arrow.png" alt="View More" /></a>
 </div>
 <div class="content_wrap" id="divArrow">
 	<div class="content">
@@ -241,11 +206,8 @@
 		<div class="circles-half"><img src="http://squaresconference.com/2017/images/squares-half.png" alt="Squares" /></div>
 	</div>
 </div>
-<div class="footer">
-	<p class="copyright">&copy; Copyright 2016 Circles Company. All rights reserved. <a href="/refund-policy" target="_blank">Refund Policy</a>&nbsp;/&nbsp;<a href="/conduct" target="_blank">Code of Conduct</a>&nbsp;/&nbsp;<a href="mailto:hello@squaresconference.com" target="_blank">Contact Us</a></p>
-	<p class="copyright right">Designed by Ismael Burciaga of <a href="http://reblventures.com" target="_blank">REBL</a></p>
-	<div class="push"></div>
-</div>
+
+{% include footer.html %}
 
 <div class="menu-wrapper pad-20" id="menuOverlay">
 	<div class="menu-wrapper-2">
@@ -276,6 +238,3 @@
 		</div>
 	</div>
 </div>
-
-</body> 
-</html>
