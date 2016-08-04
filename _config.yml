@@ -17,15 +17,15 @@ defaults:
     type: speakers
   values:
     Job Title: 
-    Featured Image:
-    Red Image:
-    Twitter URL:
-    Website URL:
+    Featured Image: 
+    Red Image: 
+    Twitter URL: 
+    Website URL: 
     Options:
-      Is Featured:
-      Is Large:
-    Topic Title:
-    Topic Description:
+      Is Featured: 
+      Is Large: 
+    Topic Title: 
+    Topic Description: 
 email: your-email@domain.com
 description: |
   Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
