@@ -2,7 +2,7 @@
 title: Speakers
 date: 2016-08-04 01:04:00 Z
 permalink: "/speakers"
-layout: page
+layout: default
 ---
 
 <div class="home-speakers-wrap pad-tb-180 relative">
