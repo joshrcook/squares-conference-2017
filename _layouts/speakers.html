@@ -6,10 +6,32 @@ layout: default
 	<div class="section home-speakers page-speakers relative">
 		<h2 class="small-titles red rotate">Speakers</h2>
 
-		{{ page }}
-		{% for speaker in page.speakers %}
-			something
+		{% for all_speaker in page['All Speakers'] %}
+			{% assign speakers = site.speakers | where: "title", all_speaker.speaker %}
+			{% for speaker in speakers %}
+				{{ speaker[title] }}
+				<div class="panel speaker-panel {% if all_speaker['Is Large'] %}big{% endif %}">
+					<div class="speaker-image relative">
+						<div class="speaker-links">
+							<a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
+							<a href="{{ speaker['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+						</div>
+						{% if all_speaker['Is Large'] %}
+							<img src="{{ speaker['Red Image'] }}" alt="Speaker Name" class="avatar" />
+						{% else %}
+							<img src="{{ speaker['Featured Image'] }}" alt="Speaker Name" class="avatar" />
+						{% endif %}
+						
+					</div>
+					<h2>{{ speaker.title }}</h2>
+					<h3>{{ speaker['Job Title'] }}</h3>
+				</div>
+			{% endfor %}
+
 		{% endfor %}
+
+		<!-- 
+
 		<div class="panel speaker-panel big">
 			<div class="speaker-image relative">
 				<div class="speaker-links">
@@ -125,6 +147,8 @@ layout: default
 			</div>
 			<div class="push"></div>
 		</div>
+
+		-->
 		
 	</div>
 	<div class="square-border side-right grey"></div>
