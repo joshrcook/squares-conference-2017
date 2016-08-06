@@ -83,7 +83,7 @@
 	</div>
 </div>
 <div class="footer">
-	<p class="copyright">&copy; Copyright <?php echo date('Y'); ?> <?php echo $companyName ?>. All rights reserved. <a href="/refund-policy" target="_blank">Refund Policy</a>&nbsp;/&nbsp;<a href="/conduct" target="_blank">Code of Conduct</a>&nbsp;/&nbsp;<a href="mailto:hello@squaresconference.com" target="_blank">Contact Us</a></p>
+	<p class="copyright">&copy; Copyright <?php echo date('Y'); ?> <?php echo $companyName ?>. All rights reserved. <a href="http://squaresconference.com/refund-policy" target="_blank">Refund Policy</a>&nbsp;/&nbsp;<a href="http://squaresconference.com/conduct" target="_blank">Code of Conduct</a>&nbsp;/&nbsp;<a href="mailto:hello@squaresconference.com" target="_blank">Contact Us</a></p>
 	<p class="copyright right">Designed by Ismael Burciaga of <a href="http://reblventures.com" target="_blank">REBL</a></p>
 	<div class="push"></div>
 </div>
@@ -94,12 +94,10 @@
 			<h2 class="title-menu">Menu</h2>
 			<div class="menu-content">
 				<ul class="right">
-					<li><a href="<?php echo $siteURL ?>" class="menuLink">Home</a></li>
-					<li><a href="<?php echo $siteURL ?>/speakers.php" class="menuLink">Speakers</a></li>
-					<li><a href="<?php echo $siteURL ?>/workshops.php" class="menuLink">Workshops</a></li>
-					<li><a href="<?php echo $siteURL ?>/venue.php" class="menuLink">Venue</a></li>
-					<li><a href="<?php echo $siteURL ?>/schedule.php" class="menuLink">Schedule</a></li>
-					<li><a href="<?php echo $siteURL ?>/about.php" class="menuLink">About</a></li>
+					{% assign menu_items = site.pages | where: "Is In Menu", true %}
+					{% for menu_item in menu_items %}
+						<li><a href="{{ menu_item.permalink }}" class="menuLink">{{ menu_item.title }}</a></li>
+					{% endfor %}
 					<li><a href="#Sponsors" class="anchorLink menuLink">Sponsors</a></li>
 				</ul>
 				<div class="left">
