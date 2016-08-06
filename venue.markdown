@@ -13,5 +13,6 @@ Venue Parties:
 - party: Opening Mixer
 - party: Opening Mixer
 - party: Opening Mixer
+layout: venue
 ---
 
