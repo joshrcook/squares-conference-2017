@@ -2,17 +2,17 @@
 title: Speakers
 date: 2016-08-04 01:04:00 Z
 permalink: "/speakers"
-Speakers:
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
-- Speaker: Ismael Burciaga
+All Speakers:
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
 layout: speakers
 ---
 
