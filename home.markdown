@@ -2,6 +2,7 @@
 title: Home
 date: 2016-08-03 22:50:00 -04:00
 permalink: "/"
+position: 0
 SEO:
   Title: 'Squares Conference: A design & dev conference by Circles Co.'
 Body Class: home
@@ -13,6 +14,7 @@ Speakers:
 - Ismael Burciaga
 - Ismael Burciaga
 - Ismael Burciaga
+Is In Menu: true
 layout: home
 ---
 

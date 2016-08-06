@@ -46,7 +46,10 @@ layout: default
 			{% endfor %}
 		{% endfor %}
 		<div class="push"></div>
-		<h3 class="small-titles grey rotate-right"><a href="http://squaresconference.com/2017/speakers.php">View all speakers</a></h3>
+		{% assign speakers_page = site.pages | where: "title", "Speakers" %}
+		{% for speaker_page in speakers_page %}
+			<h3 class="small-titles grey rotate-right"><a href="{{ speaker_page.permalink }}">View all speakers</a></h3>
+		{% endfor %}
 	</div>
 	<div class="square-border side-right grey"></div>
 </div>
@@ -66,7 +69,7 @@ layout: default
 					<h4>starting at</h4>
 					<h5>$195</h5>
 				</div>
-				<a href="http://squaresconference.com/register" target="_blank" class="button">Register Today</a>
+				<a href="{{ site['Registration URL'] }}" target="_blank" class="button">Register Today</a>
 				<div class="push"></div>
 			</div>
 		</div>
