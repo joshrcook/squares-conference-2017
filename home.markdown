@@ -7,7 +7,6 @@ Speakers:
 - Ismael Burciaga
 - Ismael Burciaga
 - Ismael Burciaga
-layout: default
 ---
 
 <div class="what-is-squares">
