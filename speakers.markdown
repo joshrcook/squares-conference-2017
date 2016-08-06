@@ -5,7 +5,7 @@ permalink: "/speakers"
 position: 1
 All Speakers:
 - speaker: Ismael Burciaga
-  is_large: true
+  is_red: true
 - speaker: Ismael Burciaga
 - speaker: Ismael Burciaga
 - speaker: Ismael Burciaga
