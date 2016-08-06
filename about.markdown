@@ -9,6 +9,7 @@ Body Class: about
 Hero Text: About<br><span>&amp; Team
 Hero Image: "/assets/images/hero-about.jpg"
 Is In Menu: true
+layout: default
 ---
 
 <div class="what-is-squares pad-b-180">
