@@ -39,7 +39,7 @@ layout: default
 			</div>
 			<div class="recap-wrap">
 				<h3>2016 Recap</h3>
-				<a href="https://vimeo.com/168680241" class="popup-video"><img src="<?php echo $imageURL ?>/btn-play.png" alt="Play 2016 Recap Video" /></a>
+				<a href="https://vimeo.com/168680241" class="popup-video"><img src="/assets/images/btn-play.png" alt="Play 2016 Recap Video" /></a>
 			</div>
 		</div>
 		<div class="push"></div>
@@ -48,11 +48,11 @@ layout: default
 </div>
 
 <div class="section">
-	<img src="<?php echo $imageURL ?>/why-come.png" alt="Why come to Squares" />
+	<img src="/assets/images/why-come.png" alt="Why come to Squares" />
 </div>
 
 <div class="double height-reset relative why-come-wrap">
-	<div class="left bg-image relative bs pad-120" style="background-image: url(<?php echo $imageURL ?>/bg-about-red.jpg);">
+	<div class="left bg-image relative bs pad-120" style="background-image: url(/assets/images/bg-about-red.jpg);">
 		<hr class="marg-b-40 divider black ta-left" />
 		<div class="why-come">
 			<h2>01</h2>
@@ -124,7 +124,7 @@ layout: default
 		<h2 class="small-titles red rotate">The Team</h2>
 		<div class="panel speaker-panel first">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/burciaga" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/ismael-burciaga.jpg" alt="Ismael Burciaga" class="avatar" /></a>
+				<a href="http://twitter.com/burciaga" target="_blank" class="btn_website"><img src="/assets/images/ismael-burciaga.jpg" alt="Ismael Burciaga" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Ismael Burciaga</h2>
@@ -132,7 +132,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel second">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/theamandajill" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/jill-bragdon.jpg" alt="Jill Bragdon" class="avatar" /></a>
+				<a href="http://twitter.com/theamandajill" target="_blank" class="btn_website"><img src="/assets/images/jill-bragdon.jpg" alt="Jill Bragdon" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Jill Bragdon</h2>
@@ -140,7 +140,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/hannahmontlewis" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/hannah-lewis.jpg" alt="Hannah Lewis" class="avatar" /></a>
+				<a href="http://twitter.com/hannahmontlewis" target="_blank" class="btn_website"><img src="/assets/images/hannah-lewis.jpg" alt="Hannah Lewis" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Hannah Lewis</h2>
@@ -148,7 +148,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel last">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/kylerusselburg" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/kyle-russelburg.jpg" alt="Kyle Russelburg" class="avatar" /></a>
+				<a href="http://twitter.com/kylerusselburg" target="_blank" class="btn_website"><img src="/assets/images/kyle-russelburg.jpg" alt="Kyle Russelburg" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Kyle Russelburg</h2>
@@ -156,7 +156,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel first">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/ken_doll13" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/kendall-hanna.jpg" alt="Kendall Hanna" class="avatar" /></a>
+				<a href="http://twitter.com/ken_doll13" target="_blank" class="btn_website"><img src="/assets/images/kendall-hanna.jpg" alt="Kendall Hanna" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Kendall Hanna</h2>
@@ -164,7 +164,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel second">
 			<div class="speaker-image relative">
-				<a href="https://www.instagram.com/thegabnation" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/gabrielle-carlile.jpg" alt="Gabrielle Carlile" class="avatar" /></a>
+				<a href="https://www.instagram.com/thegabnation" target="_blank" class="btn_website"><img src="/assets/images/gabrielle-carlile.jpg" alt="Gabrielle Carlile" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Gabrielle Carlile</h2>
@@ -172,7 +172,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/davidhemphill" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/david-hemphill.jpg" alt="David Hemphill" class="avatar" /></a>
+				<a href="http://twitter.com/davidhemphill" target="_blank" class="btn_website"><img src="/assets/images/david-hemphill.jpg" alt="David Hemphill" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>David Hemphill</h2>
@@ -180,7 +180,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel last">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/drknlsn" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/derek-nelson.jpg" alt="Derek Nelson" class="avatar" /></a>
+				<a href="http://twitter.com/drknlsn" target="_blank" class="btn_website"><img src="/assets/images/derek-nelson.jpg" alt="Derek Nelson" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Derek Nelson</h2>
@@ -188,7 +188,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel first">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/annedapore" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/anne-dapore.jpg" alt="Anne Dapore" class="avatar" /></a>
+				<a href="http://twitter.com/annedapore" target="_blank" class="btn_website"><img src="/assets/images/anne-dapore.jpg" alt="Anne Dapore" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Anne Dapore</h2>
@@ -196,7 +196,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel second">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/francesy" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/frances-yllana.jpg" alt="Frances Yllana" class="avatar" /></a>
+				<a href="http://twitter.com/francesy" target="_blank" class="btn_website"><img src="/assets/images/frances-yllana.jpg" alt="Frances Yllana" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Frances Yllana</h2>
@@ -204,7 +204,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel">
 			<div class="speaker-image relative">
-				<a href="http://twitter.com/printedthreads" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/brett-bowden.jpg" alt="Brett Bowden" class="avatar" /></a>
+				<a href="http://twitter.com/printedthreads" target="_blank" class="btn_website"><img src="/assets/images/brett-bowden.jpg" alt="Brett Bowden" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Brett Bowden</h2>
@@ -212,7 +212,7 @@ layout: default
 		</div>
 		<div class="panel speaker-panel last">
 			<div class="speaker-image relative">
-				<a href="http://instagram.com/lemieux.company" target="_blank" class="btn_website"><img src="<?php echo $imageURL ?>/wilson-lemieux.jpg" alt="Wilson Lemieux" class="avatar" /></a>
+				<a href="http://instagram.com/lemieux.company" target="_blank" class="btn_website"><img src="/assets/images/wilson-lemieux.jpg" alt="Wilson Lemieux" class="avatar" /></a>
 				<div class="push"></div>
 			</div>
 			<h2>Wilson Lemieux</h2>
@@ -224,7 +224,7 @@ layout: default
 </div>
 
 <div class="double relative">
-	<div class="left bg-image relative" style="background-image: url(<?php echo $imageURL ?>/bg-about-2.jpg);">
+	<div class="left bg-image relative" style="background-image: url(/assets/images/bg-about-2.jpg);">
 		<h6 class="rotate">Photo by Cory Hale</h6>
 	</div>
 	<div class="right relative">
