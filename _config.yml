@@ -8,6 +8,9 @@ collections:
   posts:
     title: Posts
     output: true
+  sessions:
+    title: Sessions
+    output: true
   speakers:
     title: Speakers
     output: false
