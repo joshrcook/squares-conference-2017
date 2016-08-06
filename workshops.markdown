@@ -17,5 +17,6 @@ Track 1 Workshops:
 Track 2 Workshops:
 - workshop: 'Prototyping: Beyond The Wireframe'
 - workshop: 'Prototyping: Beyond The Wireframe'
+layout: workshops
 ---
 
