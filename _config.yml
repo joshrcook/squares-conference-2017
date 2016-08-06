@@ -57,10 +57,7 @@ defaults:
     path: ''
     type: workshops
   values:
-    Track: 1 or 2
     Category: Design, UX, Front-End, Development, or Product
-    Topic Title: 
-    Description: 
     Time: 
     Teacher:
       Name: 
