@@ -10,7 +10,7 @@ collections:
     output: true
   sessions:
     title: Sessions
-    output: true
+    output: false
   speakers:
     title: Speakers
     output: false
