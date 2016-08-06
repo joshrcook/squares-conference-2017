@@ -17,12 +17,12 @@ defaults:
     type: pages
   values:
     SEO:
-      Title:
-      Description:
-      Keywords:
-    Body Class:
-    Hero Text:
-    Hero Image:
+      Title: 
+      Description: 
+      Keywords: 
+    Body Class: 
+    Hero Text: 
+    Hero Image: 
 - scope:
     path: ''
     type: speakers
