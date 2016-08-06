@@ -2,7 +2,7 @@
 title: Workshops
 date: 2016-08-06 01:13:00 -04:00
 permalink: "/workshops"
-position: 3
+position: 2
 SEO:
   Title: Workshops - Squares Conference
 Body Class: about workshops

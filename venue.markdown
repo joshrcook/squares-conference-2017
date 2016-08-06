@@ -2,7 +2,7 @@
 title: Venue
 date: 2016-08-06 02:03:00 -04:00
 permalink: "/venue"
-position: 2
+position: 3
 SEO:
   Title: Venue - Squares Conference
 Body Class: venue
