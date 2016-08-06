@@ -42,24 +42,24 @@
 </a>
 
 <div class="fixed-register">
-	<a href="<?php echo $registrationURL ?>">register</a>
+	<a href="{{ site[ 'Registration URL' ] }}">register</a>
 </div>
 
-<div id="divTop" class="header_wrap relative bg-image"<?php if (!empty($heroImageUrl)): ?> style="background-image: url(<?php echo $imageURL ?>/<?php echo $heroImageUrl ?>);"<?php endif ?>>
+<div id="divTop" class="header_wrap relative bg-image" {% if page['Hero Image'] %}style="background-image: url({{ page[ 'Hero Image'] }})"{% endif %}>
 	<div class="header">
 		<h3 class="hero-date rotate-right small-titles">April 26-28, 2017</h3>
 		<h3 class="hero-location rotate-right small-titles">Grapevine, TX</h3>
-		<?php if (!empty($heroText)): ?>
+		{% if page['Hero Text'] %}
 		<div class="squares-page">
 				<div class="squares-empty"></div>
 				<div class="squares-container">
-					<h2 class="page-name"><?php echo $heroText ?></h2>
+					<h2 class="page-name">{{ page['Hero Text'] }}</h2>
 				</div>
 		</div>
-		<?php endif ?>
+		{% endif %}
 		<div class="register-wrap">
 			<h5 class="pad-l-80">Be Square. Register today.</h5>
-			<a href="<?php echo $registrationURL ?>" class="button-register"><img src="<?php echo $imageURL ?>/black-arrow.svg" alt="Register Today" /></a>
+			<a href="{{ site['Registration URL'] }}" class="button-register"><img src="{{ site.url }}/assets/images/black-arrow.svg" alt="Register Today" /></a>
 			<div class="push"></div>
 		</div>
 		<h6>Photo by Cory Hale</h6>
@@ -67,7 +67,7 @@
 	<div class="squares-logo">
 			<div class="squares-empty"></div>
 			<div class="squares-container">
-					<a href="<?php echo $siteURL ?>"><img src="<?php echo $imageURL ?>/logo-squares.png" alt="<?php echo $websiteName ?>" /></a>
+					<a href="{{ site.url }}"><img src="{{ site.url }}/assets/images/logo-squares.png" alt="{{ site.title }}" /></a>
 			</div>
 	</div>
 	<div class="red-border">
