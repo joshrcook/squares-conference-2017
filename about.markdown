@@ -120,102 +120,19 @@ layout: default
 <div class="home-speakers-wrap pad-tb-180 relative">
 	<div class="section home-speakers relative">
 		<h2 class="small-titles red rotate">The Team</h2>
-		<div class="panel speaker-panel first">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/burciaga" target="_blank" class="btn_website"><img src="/assets/images/ismael-burciaga.jpg" alt="Ismael Burciaga" class="avatar" /></a>
-				<div class="push"></div>
+		{% assign sorted_team = site.team | sort: "position" %}
+		{% for team_member in sorted_team %}
+			<div class="panel speaker-panel
+			{% cycle 'first', 'second', '', 'last' %}
+			">
+				<div class="speaker-image relative">
+					<a href="http://twitter.com/burciaga" target="_blank" class="btn_website"><img src="/assets/images/ismael-burciaga.jpg" alt="Ismael Burciaga" class="avatar" /></a>
+					<div class="push"></div>
+				</div>
+				<h2>{{ team_member.title }}</h2>
+				<h3>{{ team_member['Job Title'] }}</h3>
 			</div>
-			<h2>Ismael Burciaga</h2>
-			<h3>The Creative Visionary</h3>
-		</div>
-		<div class="panel speaker-panel second">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/theamandajill" target="_blank" class="btn_website"><img src="/assets/images/jill-bragdon.jpg" alt="Jill Bragdon" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Jill Bragdon</h2>
-			<h3>The Experience Architect</h3>
-		</div>
-		<div class="panel speaker-panel">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/hannahmontlewis" target="_blank" class="btn_website"><img src="/assets/images/hannah-lewis.jpg" alt="Hannah Lewis" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Hannah Lewis</h2>
-			<h3>The Catalyst</h3>
-		</div>
-		<div class="panel speaker-panel last">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/kylerusselburg" target="_blank" class="btn_website"><img src="/assets/images/kyle-russelburg.jpg" alt="Kyle Russelburg" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Kyle Russelburg</h2>
-			<h3>The Swiss Army Knife</h3>
-		</div>
-		<div class="panel speaker-panel first">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/ken_doll13" target="_blank" class="btn_website"><img src="/assets/images/kendall-hanna.jpg" alt="Kendall Hanna" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Kendall Hanna</h2>
-			<h3>The Decor Specialist</h3>
-		</div>
-		<div class="panel speaker-panel second">
-			<div class="speaker-image relative">
-				<a href="https://www.instagram.com/thegabnation" target="_blank" class="btn_website"><img src="/assets/images/gabrielle-carlile.jpg" alt="Gabrielle Carlile" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Gabrielle Carlile</h2>
-			<h3>The Socialite</h3>
-		</div>
-		<div class="panel speaker-panel">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/davidhemphill" target="_blank" class="btn_website"><img src="/assets/images/david-hemphill.jpg" alt="David Hemphill" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>David Hemphill</h2>
-			<h3>Web Support</h3>
-		</div>
-		<div class="panel speaker-panel last">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/drknlsn" target="_blank" class="btn_website"><img src="/assets/images/derek-nelson.jpg" alt="Derek Nelson" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Derek Nelson</h2>
-			<h3>Squares Friend</h3>
-		</div>
-		<div class="panel speaker-panel first">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/annedapore" target="_blank" class="btn_website"><img src="/assets/images/anne-dapore.jpg" alt="Anne Dapore" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Anne Dapore</h2>
-			<h3>Volunteer Coordinator</h3>
-		</div>
-		<div class="panel speaker-panel second">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/francesy" target="_blank" class="btn_website"><img src="/assets/images/frances-yllana.jpg" alt="Frances Yllana" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Frances Yllana</h2>
-			<h3>Party Coordinator</h3>
-		</div>
-		<div class="panel speaker-panel">
-			<div class="speaker-image relative">
-				<a href="http://twitter.com/printedthreads" target="_blank" class="btn_website"><img src="/assets/images/brett-bowden.jpg" alt="Brett Bowden" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Brett Bowden</h2>
-			<h3>The Swag Specialist</h3>
-		</div>
-		<div class="panel speaker-panel last">
-			<div class="speaker-image relative">
-				<a href="http://instagram.com/lemieux.company" target="_blank" class="btn_website"><img src="/assets/images/wilson-lemieux.jpg" alt="Wilson Lemieux" class="avatar" /></a>
-				<div class="push"></div>
-			</div>
-			<h2>Wilson Lemieux</h2>
-			<h3>The DP</h3>
-		</div>
+		{% endfor %}
 		<div class="push"></div>
 	</div>
 	<div class="square-border side-right grey"></div>
