@@ -2,6 +2,9 @@
 title: Squares Conference
 timezone: America/New_York
 collections:
+  parties:
+    title: Parties
+    output: false
   posts:
     title: Posts
     output: true
@@ -66,6 +69,12 @@ defaults:
       Red Image: 
       Twitter URL: 
       Website URL: 
+- scope:
+    path: ''
+    type: parties
+  values:
+    Address Text: 
+    Date/Time: 
 Company Name: |
   Circles Company
 Website Name: |
