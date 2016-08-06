@@ -6,7 +6,7 @@ position: 1
 SEO:
   Title: Speakers - Squares Conference
 Body Class: speakers
-Hero Title: Speakers<br><span>&amp; Panelists
+Hero Text: Speakers<br><span>&amp; Panelists
 Hero Image: "/assets/images/hero-speakers.jpg"
 Is In Menu: true
 All Speakers:
