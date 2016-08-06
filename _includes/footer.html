@@ -94,7 +94,7 @@
 			<h2 class="title-menu">Menu</h2>
 			<div class="menu-content">
 				<ul class="right">
-					{% assign menu_items = site.pages | where: "Is In Menu", true %}
+					{% assign menu_items = site.pages | where: "Is In Menu", true | sort: "position" %}
 					{% for menu_item in menu_items %}
 						<li><a href="{{ menu_item.permalink }}" class="menuLink">{{ menu_item.title }}</a></li>
 					{% endfor %}
