@@ -8,6 +8,9 @@ collections:
   speakers:
     title: Speakers
     output: false
+  sponsors:
+    title: Sponsors
+    output: true
   uploads:
     title: Uploads
     output: true
