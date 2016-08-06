@@ -17,6 +17,21 @@ collections:
   workshops:
     title: Workshops
     output: false
+    Text: |-
+      Options: Track 1 or Track 2
+      Workshop Category: Design, UX, Front-End, Development, Product
+      Workshop Topic Title
+      Workshop Description
+      Workshop Time
+      Teacher Name
+      Teacher Job Title
+      Teacher Image - Featured
+      Teacher Image - Red Option
+      Teacher Twitter URL
+      Teacher Website URL
+      Sort Order
+    Options:
+    - 
 defaults:
 - scope:
     path: ''
