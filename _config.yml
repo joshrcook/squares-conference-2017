@@ -78,6 +78,12 @@ defaults:
   values:
     Address Text: 
     Date/Time: 
+- scope:
+    path: ''
+    type: menus
+  values:
+    Pages:
+      page: 
 Company Name: |
   Circles Company
 Website Name: |
