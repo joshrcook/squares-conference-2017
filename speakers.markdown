@@ -11,11 +11,11 @@ All Speakers:
 - speaker: Ismael Burciaga
 - speaker: Ismael Burciaga
 - speaker: Ismael Burciaga
-- speaker: Ismael Burciaga
-- speaker: Ismael Burciaga
-- speaker: Ismael Burciaga
-- speaker: Ismael Burciaga
   is_red: true
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
 Panel 1 Speakers:
 - speaker: Ismael Burciaga
 - speaker: Ismael Burciaga
