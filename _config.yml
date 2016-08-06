@@ -2,9 +2,6 @@
 title: Squares Conference
 timezone: America/New_York
 collections:
-  menus:
-    title: Menus
-    output: false
   parties:
     title: Parties
     output: false
