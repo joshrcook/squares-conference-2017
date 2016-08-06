@@ -15,7 +15,21 @@ All Speakers:
 - speaker: Ismael Burciaga
 - speaker: Ismael Burciaga
 - speaker: Ismael Burciaga
-  is_large: true
+  is_red: true
+Panel 1 Speakers:
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+Panel 2 Speakers:
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
+- speaker: Ismael Burciaga
 layout: speakers
 ---
 
