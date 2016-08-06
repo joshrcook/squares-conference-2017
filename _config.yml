@@ -16,7 +16,7 @@ collections:
     output: true
   workshops:
     title: Workshops
-    output: true
+    output: false
 defaults:
 - scope:
     path: ''
