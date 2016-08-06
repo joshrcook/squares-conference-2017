@@ -6,6 +6,12 @@ Body Class: schedule
 Hero Text: Schedule
 Hero Image: "/assets/images/hero-schedule.jpg"
 Is In Menu: true
+Workshops:
+- 
+Day 1:
+- 
+Day 2:
+- 
 layout: default
 ---
 
