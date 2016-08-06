@@ -40,6 +40,17 @@ defaults:
       Is Large: 
     Topic Title: 
     Topic Description: 
+- scope:
+    path: ''
+    type: sponsors
+  values:
+    Type: |
+      Sponsor or Partner
+    Image: 
+    URL: 
+    Tagline: 
+    Options: |
+      Premier or Standard
 Company Name: |
   Circles Company
 Website Name: |
