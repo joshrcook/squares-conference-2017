@@ -18,9 +18,9 @@ layout: default
 
 
 <div class="triple">
-	<img src="<?php echo $imageURL ?>/venue-1.jpg" alt="Squares Venue Pic" />
-	<img src="<?php echo $imageURL ?>/venue-2.jpg" alt="Squares Venue Pic" />
-	<img src="<?php echo $imageURL ?>/venue-3.jpg" alt="Squares Venue Pic" />
+	<img src="{{ site.url }}/assets/images/venue-1.jpg" alt="Squares Venue Pic" />
+	<img src="{{ site.url }}/assets/images/venue-2.jpg" alt="Squares Venue Pic" />
+	<img src="{{ site.url }}/assets/images/venue-3.jpg" alt="Squares Venue Pic" />
 </div>
 
 <div class="section pad-tb-180">
@@ -30,35 +30,31 @@ layout: default
 	</div>
 	<div class="recap-wrap right marg-t-140 marg-r-80">
 		<h3>2016 Recap</h3>
-		<a href="https://vimeo.com/168680241" class="popup-video"><img src="<?php echo $imageURL ?>/btn-play.png" alt="Play 2016 Recap Video" /></a>
+		<a href="https://vimeo.com/168680241" class="popup-video"><img src="{{ site.url }}/assets/images/btn-play.png" alt="Play 2016 Recap Video" /></a>
 	</div>
 	<div class="push"></div>
 </div>
 
 <div class="double relative">
-	<div class="left bg-image relative" style="background-image: url(<?php echo $imageURL ?>/bg-parties.jpg);">
+	<div class="left bg-image relative" style="background-image: url({{ site.url }}/assets/images/bg-parties.jpg);">
 		<h6 class="rotate bbb">Photo by Smilebooth</h6>
 	</div>
 	<div class="right relative">
 		<h2 class="small-titles red rotate-right up">Parties</h2>
 		<div class="absolute bs pad-120">
-			<div class="parties">
-				<h2>Opening Mixer</h2>
-				<h3 class="small-titles">Wednesday, April 26th - 7 pm</h3>
-				<p>Back Porch Tavern &amp; Grill<br />210 N. Main Street<br />Grapevine, TX 76501</p>
-			</div>
-			<hr class="marg-b-40 marg-t-40 divider ta-left" />
-			<div class="parties">
-				<h2>After Party</h2>
-				<h3 class="small-titles">Thursday, April 27th - 7:30 pm</h3>
-				<p>Delaney Vinyards<br />2000 Champagne Blvd<br />Grapevine, TX 76501</p>
-			</div>
-			<hr class="marg-b-40 marg-t-40 divider ta-left" />
-			<div class="parties">
-				<h2>Goodbye Party</h2>
-				<h3 class="small-titles">Friday, April 28th - 7:30 pm</h3>
-				<p>The Ginger Man<br />1512 E. Southlake Blvd<br />Southlake, TX 76092</p>
-			</div>
+			{% for party_name in page['Venue Parties'] %}
+				{% assign last = forloop.last %}
+				{% for party in site.parties | where: "title", party_name %}
+					<div class="parties">
+						<h2>Opening Mixer</h2>
+						<h3 class="small-titles">Wednesday, April 26th - 7 pm</h3>
+						<p>Back Porch Tavern &amp; Grill<br />210 N. Main Street<br />Grapevine, TX 76501</p>
+					</div>
+					{% if last == false %}
+					<hr class="marg-b-40 marg-t-40 divider ta-left" />
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
 		</div>
 	</div>
 	<div class="push"></div>
