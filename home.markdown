@@ -9,7 +9,7 @@ Speakers:
 - Ismael Burciaga
 - Ismael Burciaga
 - Ismael Burciaga
-layout: default
+layout: page
 ---
 
 <div class="what-is-squares">
