@@ -24,8 +24,9 @@ defaults:
       Desc: 
       Keywords: 
     Body Class: 
-    Hero Title: 
+    Hero Text: 
     Hero Image: 
+    Is In Menu: 
 - scope:
     path: ''
     type: speakers
