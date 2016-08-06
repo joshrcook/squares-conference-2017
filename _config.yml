@@ -45,12 +45,10 @@ defaults:
     type: sponsors
   values:
     Type: |
-      Sponsor or Partner
+      Premier, Standard or Partner
     Image: 
     URL: 
     Tagline: 
-    Options: |
-      Premier or Standard
 Company Name: |
   Circles Company
 Website Name: |

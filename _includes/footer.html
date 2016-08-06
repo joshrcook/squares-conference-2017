@@ -34,11 +34,10 @@
 	<div class="section pad-t-140">
 		<div class="partner-logos relative">
 			<h2 class="small-titles rotate">Partners</h2>
-			<a href="http://aigadfw.org" target="_blank"><img src="{{ site.url }}/assets/images/p-aiga.png" alt="AIGA DFW" /></a>
-			<a href="http://printedthreads.com" target="_blank"><img src="{{ site.url }}/assets/images/p-printedthreads.png" alt="Printed Threads" /></a>
-			<a href="http://foxypropaganda.com" target="_blank"><img src="{{ site.url }}/assets/images/p-foxy.png" alt="Foxy Propaganda" /></a>
-			<a href="http://www.kindsnacks.com" target="_blank"><img src="{{ site.url }}/assets/images/p-kind.png" alt="KIND Healhty Snacks" /></a>
-			<a href="http://okpaper.com" target="_blank"><img src="{{ site.url }}/assets/images/p-ok.png" alt="OLMSTED-KIRK PAPER" /></a>
+			{% assign partners = site.sponsors | where: "Type", "Partner" %}
+			{% for partner in partners %}
+				<a href="{{ partner.URL }}" target="_blank"><img src="{{ partner.Image }}" alt="{{ partner.title }}" /></a>
+			{% endfor %}
 			<div class="push"></div>
 		</div>
 	</div>
