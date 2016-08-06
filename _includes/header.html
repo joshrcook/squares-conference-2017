@@ -6,7 +6,7 @@
 
 		<meta name="description" content="{{ page.SEO.Description }}" /> 
 		<meta name="keywords" content="{{ page.SEO.Keywords}}" />
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="width=device-width; initial-scale=1">
 
 		<meta property="og:title" content="{{ page.SEO.Title }}>" />
 		<meta property="og:description" content="{{ page.SEO.Description }}" />
@@ -31,7 +31,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head> 
  
-<body class="{{ page['Body Class'] }}"
+<body class="{{ page['Body Class'] }}">
 
 <a href="javascript: void(0);" id="btnMenu">
 	<div id="nav-icon4">
@@ -45,7 +45,10 @@
 	<a href="{{ site[ 'Registration URL' ] }}">register</a>
 </div>
 
-<div id="divTop" class="header_wrap relative bg-image" {% if page['Hero Image'] %}style="background-image: url({{ page[ 'Hero Image'] }})"{% endif %}>
+<div id="divTop" class="header_wrap relative bg-image" 
+	{% if page['Hero Image'] %}
+	style="background-image: url({{ page['Hero Image'] }})"
+	{% endif %}>
 	<div class="header">
 		<h3 class="hero-date rotate-right small-titles">April 26-28, 2017</h3>
 		<h3 class="hero-location rotate-right small-titles">Grapevine, TX</h3>
@@ -79,7 +82,7 @@
 		</div>
 	</div>
 	<div class="push"></div>
-	<a href="#divArrow" class="anchorLink btn-arrow"><img src="<?php echo $imageURL ?>/btn-arrow.png" alt="View More" /></a>
+	<a href="#divArrow" class="anchorLink btn-arrow"><img src="{{ site.url }}/assets/images/btn-arrow.png" alt="View More" /></a>
 </div>
 <div class="content_wrap" id="divArrow">
 	<div class="content">
