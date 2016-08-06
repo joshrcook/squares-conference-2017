@@ -4,36 +4,22 @@
 <div class="sponsor-wrap pad-tb-140 relative" id="Sponsors">
 	<div class="section">
 		<ul class="sponsors-big">
-			{% for sponsor in site.sponsors | where: "Options", "Premier" %}
+			{% assign premier_sponsors = site.sponsors | where: "Options", "Premier" %}
+			{% for premier_sponsor in premier_sponsors %}
 			<li class="pad-tb-40">
-				<a href="http://myfonts.com" target="_blank"><img src="{{ site.url }}/assets/images/s-mailchimp.png" alt="My Fonts" /></a>
+				<a href="{{ premier_sponsor.URL }}" target="_blank"><img src="{{ premier_sponsor['Image'] }}" alt="{{ premier_sponsor.title }}" /></a>
 			</li>
 			{% endfor %}
 			<div class="push"></div>
 		</ul>
 		<hr class="marg-b-40 white marg-t-40 divider" />
 		<ul class="sponsors-small pad-b-140">
+			{% assign standard_sponsors = site.sponsors | where: "Options", "Standard" %}
+			{% for standard_sponsor in standard_sponsors %}
 			<li class="pad-tb-40">
-				<a href="http://myfonts.com" target="_blank"><img src="{{ site.url }}/assets/images/s-myfonts.png" alt="My Fonts" /></a>
+				<a href="{{ standard_sponsor.URL }}" target="_blank"><img src="{{ standard_sponsor.Image }}" alt="{{ standard_sponsor.title }}" /></a>
 			</li>
-			<li class="pad-tb-40">
-				<a href="http://carbonads.net" target="_blank"><img src="{{ site.url }}/assets/images/s-carbon.png" alt="Carbon Ads" /></a>
-			</li>
-			<li class="pad-tb-40">
-				<a href="http://foxypropaganda.com" target="_blank"><img src="{{ site.url }}/assets/images/s-propaganda.png" alt="Foxy Propganda" /></a>
-			</li>
-			<li class="pad-tb-40">
-				<a href="http://smilebooth.com" target="_blank"><img src="{{ site.url }}/assets/images/s-smilebooth.png" alt="Smilebooth" /></a>
-			</li>
-			<li class="pad-tb-40">
-				<a href="http://www.scoutbooks.com" target="_blank"><img src="{{ site.url }}/assets/images/s-scoutbooks.png" alt="Scoutbooks" /></a>
-			</li>
-			<li class="pad-tb-40">
-				<a href="http://www.scoutbooks.com" target="_blank"><img src="{{ site.url }}/assets/images/s-deep.png" alt="Scoutbooks" /></a>
-			</li>
-			<li class="pad-tb-40">
-				<a href="http://www.scoutbooks.com" target="_blank"><img src="{{ site.url }}/assets/images/s-scoutbooks.png" alt="Scoutbooks" /></a>
-			</li>
+			{% endfor %}
 			<li class="pad-tb-40 empty">
 				<a href="https://circlesco.com/conference/sponsors" target="_blank"><img src="{{ site.url }}/assets/images/s-empty.png" alt="This Could Be You" /></a>
 			</li>
