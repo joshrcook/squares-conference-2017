@@ -31,91 +31,48 @@ layout: default
 		<div class="left">
 			<h2 class="titles marg-b-180">track I</h2>
 	
-	
-			<!-- 
-			<div class="schedule-panel">
-				<div class="schedule-avatar">
-					<img src="<?php echo $imageURL ?>/speaker-placeholder.jpg" alt="Speaker Name"  />
-				</div>
-				<div class="schedule-meta">
-					<h3 class="schedule-type">Workshop II</h3>
-					<h2 class="titles red">Michael Wilson</h2>
-					<h4 class="job-title">designer at Invision</h4>
-					<hr class="marg-b-30 marg-t-30 divider ta-left" />
-					<h5>Prototyping: Beyond The Wireframe</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis leo ornare leo porta dictum. Phasellus ornare nunc quis dignissim luctus. Nunc iaculis lorem libero, quis ornare lorem pretium eu. Etiam sit amet egestas augue, quis placerat nisi. Pellentesque sagittis non tortor nec sodales. Nam eu enim mauris. Phasellus viverra, ex a pellentesque lacinia, urna mauris dignissim erat,</p>
-				</div>
-				<div class="push"></div>
-			</div>
-	
-	
-			<div class="schedule-panel">
-				<div class="schedule-avatar">
-					<img src="<?php echo $imageURL ?>/speaker-placeholder.jpg" alt="Speaker Name"  />
-				</div>
-				<div class="schedule-meta">
-					<h3 class="schedule-type">Workshop III</h3>
-					<h2 class="titles red">Michael Wilson</h2>
-					<h4 class="job-title">designer at Invision</h4>
-					<hr class="marg-b-30 marg-t-30 divider ta-left" />
-					<h5>Prototyping: Beyond The Wireframe</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis leo ornare leo porta dictum. Phasellus ornare nunc quis dignissim luctus. Nunc iaculis lorem libero, quis ornare lorem pretium eu. Etiam sit amet egestas augue, quis placerat nisi. Pellentesque sagittis non tortor nec sodales. Nam eu enim mauris. Phasellus viverra, ex a pellentesque lacinia, urna mauris dignissim erat,</p>
-				</div>
-				<div class="push"></div>
-			</div>
-	
-	
-			<div class="schedule-panel">
-				<div class="schedule-avatar">
-					<img src="<?php echo $imageURL ?>/speaker-placeholder.jpg" alt="Speaker Name"  />
-				</div>
-				<div class="schedule-meta">
-					<h3 class="schedule-type">Workshop IV</h3>
-					<h2 class="titles red">Michael Wilson</h2>
-					<h4 class="job-title">designer at Invision</h4>
-					<hr class="marg-b-30 marg-t-30 divider ta-left" />
-					<h5>Prototyping: Beyond The Wireframe</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis leo ornare leo porta dictum. Phasellus ornare nunc quis dignissim luctus. Nunc iaculis lorem libero, quis ornare lorem pretium eu. Etiam sit amet egestas augue, quis placerat nisi. Pellentesque sagittis non tortor nec sodales. Nam eu enim mauris. Phasellus viverra, ex a pellentesque lacinia, urna mauris dignissim erat,</p>
-				</div>
-				<div class="push"></div>
-			</div>
-			-->
-	
+			{% for workshop_title in page['Track 1 Workshops'] %}
+				{% for workshop in site.workshops | where: "title", workshop_title %}
+					<div class="schedule-panel">
+						<div class="schedule-avatar">
+							<img src="{{ workshop.Teacher['Featured Image'] }}" alt="{{ workshop.Teacher.Name }}"  />
+						</div>
+						<div class="schedule-meta">
+							<h3 class="schedule-type">{{ workshop.Category }}</h3>
+							<h2 class="titles red">{{ workshop.Teacher.Name }}</h2>
+							<h4 class="job-title">{{ workshop.Teacher['Job Title'] }}</h4>
+							<hr class="marg-b-30 marg-t-30 divider ta-left" />
+							<h5>{{ workshop.title }}</h5>
+							{{ workshop.content | markdownify }}
+						</div>
+						<div class="push"></div>
+					</div>
+				{% endfor %}
+			{% endfor %}
 	
 		</div>
 		<div class="right">
 			<h2 class="titles marg-b-180">track II</h2>
 	
-			<div class="schedule-panel">
-				<div class="schedule-avatar">
-					<img src="<?php echo $imageURL ?>/speaker-placeholder.jpg" alt="Speaker Name"  />
-				</div>
-				<div class="schedule-meta">
-					<h3 class="schedule-type">Workshop I</h3>
-					<h2 class="titles red">Michael Wilson</h2>
-					<h4 class="job-title">designer at Invision</h4>
-					<hr class="marg-b-30 marg-t-30 divider ta-left" />
-					<h5>Prototyping: Beyond The Wireframe</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis leo ornare leo porta dictum. Phasellus ornare nunc quis dignissim luctus. Nunc iaculis lorem libero, quis ornare lorem pretium eu. Etiam sit amet egestas augue, quis placerat nisi. Pellentesque sagittis non tortor nec sodales. Nam eu enim mauris. Phasellus viverra, ex a pellentesque lacinia, urna mauris dignissim erat,</p>
-				</div>
-				<div class="push"></div>
-			</div>
-	
-	
-			<div class="schedule-panel">
-				<div class="schedule-avatar">
-					<img src="<?php echo $imageURL ?>/speaker-placeholder.jpg" alt="Speaker Name"  />
-				</div>
-				<div class="schedule-meta">
-					<h3 class="schedule-type">Workshop II</h3>
-					<h2 class="titles red">Michael Wilson</h2>
-					<h4 class="job-title">designer at Invision</h4>
-					<hr class="marg-b-30 marg-t-30 divider ta-left" />
-					<h5>Prototyping: Beyond The Wireframe</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis leo ornare leo porta dictum. Phasellus ornare nunc quis dignissim luctus. Nunc iaculis lorem libero, quis ornare lorem pretium eu. Etiam sit amet egestas augue, quis placerat nisi. Pellentesque sagittis non tortor nec sodales. Nam eu enim mauris. Phasellus viverra, ex a pellentesque lacinia, urna mauris dignissim erat,</p>
-				</div>
-				<div class="push"></div>
-			</div>
+			{% for workshop_title in page['Track 2 Workshops'] %}
+				{% for workshop in site.workshops | where: "title", workshop_title %}
+					<div class="schedule-panel">
+						<div class="schedule-avatar">
+							<img src="{{ workshop.Teacher['Featured Image'] }}" alt="{{ workshop.Teacher.Name }}"  />
+						</div>
+						<div class="schedule-meta">
+							<h3 class="schedule-type">{{ workshop.Category }}</h3>
+							<h2 class="titles red">{{ workshop.Teacher.Name }}</h2>
+							<h4 class="job-title">{{ workshop.Teacher['Job Title'] }}</h4>
+							<hr class="marg-b-30 marg-t-30 divider ta-left" />
+							<h5>{{ workshop.title }}</h5>
+							{{ workshop.content | markdownify }}
+						</div>
+						<div class="push"></div>
+					</div>
+				{% endfor %}
+			{% endfor %}
+
 		</div>
 		<div class="push"></div>
 	</div>
@@ -135,7 +92,7 @@ layout: default
 					<h4>starting at</h4>
 					<h5>$97</h5>
 				</div>
-				<a href="<?php echo $registrationWorkshopURL ?>" target="_blank" class="button">Register Today</a>
+				<a href="{{ site['Registration URL'] }}" target="_blank" class="button">Register Today</a>
 				<div class="push"></div>
 			</div>
 		</div>
