@@ -1,80 +1,85 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-<title>Speakers - Squares Conference</title> 
+<!DOCTYPE html>
+<html lang="en"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+		<title>{{ page.SEO.Title }}</title> 
 
-<meta name="description" content="" /> 
-<meta name="keywords" content="" />
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="description" content="{{ page.SEO.Description }}" /> 
+		<meta name="keywords" content="{{ page.SEO.Keywords}}" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-<meta property="og:title" content="Speakers - Squares Conference" />
-<meta property="og:description" content="" />
-<meta property="og:url" content="http://squaresconference.com/2017" />
-<meta property="og:image" content="http://squaresconference.com/2017/facebook_icon.png" />
+		<meta property="og:title" content="{{ page.SEO.Title }}>" />
+		<meta property="og:description" content="{{ page.SEO.Description }}" />
+		<meta property="og:url" content="{{ site.url }}" />
+		<meta property="og:image" content="{{ site.url }}/assets/images/facebook_icon.png" />
 
-<link rel="stylesheet" href="http://squaresconference.com/2017/css/screen.css" media="screen" type="text/css" /> 
-<link rel="stylesheet" href="http://squaresconference.com/2017/css/magnific-popus.css" media="screen" type="text/css" /> 
+		<link rel="stylesheet" href="{{ site.url }}/assets/css/screen.css" media="screen" type="text/css" /> 
+		<link rel="stylesheet" href="{{ site.url }}/assets/css/magnific-popus.css" media="screen" type="text/css" /> 
 
-<link rel="shortcut icon" href="http://squaresconference.com/favicon.ico" type="image/x-icon" /> 
-<link rel="apple-touch-icon-precomposed" href="http://squaresconference.com/ipad_icon.png" />
+		<link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" /> 
+		<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/ipad_icon.png" />
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://squaresconference.com/2017/js/anchor.js"></script>
-<script type="text/javascript" src="http://squaresconference.com/2017/js/infieldlabel.js"></script>
-<script type="text/javascript" src="http://squaresconference.com/2017/js/bootstrap.scrollspy.js"></script>
-<script type="text/javascript" src="http://squaresconference.com/2017/js/waypoint.js"></script>
-<script type="text/javascript" src="http://squaresconference.com/2017/js/jquery.magnific-popup.js"></script> 
-<script type="text/javascript" src="http://squaresconference.com/2017/js/emails-and-forms.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="{{ site.url }}/assets/js/anchor.js"></script>
+		<script type="text/javascript" src="{{ site.url }}/assets/js/infieldlabel.js"></script>
+		<script type="text/javascript" src="{{ site.url }}/assets/js/bootstrap.scrollspy.js"></script>
+		<script type="text/javascript" src="{{ site.url }}/assets/js/waypoint.js"></script>
+		<script type="text/javascript" src="{{ site.url }}/assets/js/jquery.magnific-popup.js"></script> 
+		<script type="text/javascript" src="{{ site.url }}/assets/js/emails-and-forms.js"></script>
 
-<script src="https://use.typekit.net/yde4jdg.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-</head> 
+		<script src="https://use.typekit.net/yde4jdg.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head> 
  
-<body class="speakers">
+<body class="{{ page['Body Class'] }}"
 
 <a href="javascript: void(0);" id="btnMenu">
-  <div id="nav-icon4">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+	<div id="nav-icon4">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
 </a>
 
 <div class="fixed-register">
-  <a href="http://squaresconference.com/register">register</a>
+	<a href="<?php echo $registrationURL ?>">register</a>
 </div>
 
-<div id="divTop" class="header_wrap relative bg-image" style="background-image: url(http://squaresconference.com/2017/images/hero-speakers.jpg);">
-  <div class="header">
-    <h3 class="hero-date rotate-right small-titles">April 26-28, 2017</h3>
-    <h3 class="hero-location rotate-right small-titles">Grapevine, TX</h3>
-        <div class="squares-page">
-        <div class="squares-empty"></div>
-        <div class="squares-container">
-          <h2 class="page-name">Speakers<br><span>&amp; Panelists</h2>
-        </div>
-    </div>
-        <div class="register-wrap">
-      <h5 class="pad-l-80">Be Square. Register today.</h5>
-      <a href="http://squaresconference.com/register" class="button-register"><img src="http://squaresconference.com/2017/images/black-arrow.svg" alt="Register Today" /></a>
-      <div class="push"></div>
-    </div>
-    <h6>Photo by Cory Hale</h6>
-  </div>
-  <div class="squares-logo">
-      <div class="squares-empty"></div>
-      <div class="squares-container">
-          <a href="http://squaresconference.com/2017"><img src="http://squaresconference.com/2017/images/logo-squares.png" alt="Squares Conference" /></a>
-      </div>
-  </div>
-  <div class="red-border">
-        <div class="squares-empty"></div>
-    <div class="squares-container">
-    </div>
-  </div>
-  <div class="push"></div>
-  <a href="#divArrow" class="anchorLink btn-arrow"><img src="http://squaresconference.com/2017/images/btn-arrow.png" alt="View More" /></a>
+<div id="divTop" class="header_wrap relative bg-image"<?php if (!empty($heroImageUrl)): ?> style="background-image: url(<?php echo $imageURL ?>/<?php echo $heroImageUrl ?>);"<?php endif ?>>
+	<div class="header">
+		<h3 class="hero-date rotate-right small-titles">April 26-28, 2017</h3>
+		<h3 class="hero-location rotate-right small-titles">Grapevine, TX</h3>
+		<?php if (!empty($heroText)): ?>
+		<div class="squares-page">
+				<div class="squares-empty"></div>
+				<div class="squares-container">
+					<h2 class="page-name"><?php echo $heroText ?></h2>
+				</div>
+		</div>
+		<?php endif ?>
+		<div class="register-wrap">
+			<h5 class="pad-l-80">Be Square. Register today.</h5>
+			<a href="<?php echo $registrationURL ?>" class="button-register"><img src="<?php echo $imageURL ?>/black-arrow.svg" alt="Register Today" /></a>
+			<div class="push"></div>
+		</div>
+		<h6>Photo by Cory Hale</h6>
+	</div>
+	<div class="squares-logo">
+			<div class="squares-empty"></div>
+			<div class="squares-container">
+					<a href="<?php echo $siteURL ?>"><img src="<?php echo $imageURL ?>/logo-squares.png" alt="<?php echo $websiteName ?>" /></a>
+			</div>
+	</div>
+	<div class="red-border">
+		<?php if (!empty($heroHomeText)): ?>
+			<h4><?php echo $heroHomeText ?></h4>
+		<?php endif ?>
+		<div class="squares-empty"></div>
+		<div class="squares-container">
+		</div>
+	</div>
+	<div class="push"></div>
+	<a href="#divArrow" class="anchorLink btn-arrow"><img src="<?php echo $imageURL ?>/btn-arrow.png" alt="View More" /></a>
 </div>
 <div class="content_wrap" id="divArrow">
-  <div class="content">
+	<div class="content">
