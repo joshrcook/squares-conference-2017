@@ -52,7 +52,7 @@ defaults:
       Premier, Standard or Partner
     Image: 
     URL: 
-    Tagline:
+    Tagline: 
 - scope:
     path: ''
     type: workshops
