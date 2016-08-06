@@ -8,16 +8,16 @@ layout: default
 
 		{% for all_speaker in page['All Speakers'] %}
 			{% assign speakers = site.speakers | where: "title", all_speaker.speaker %}
+			{% assign speaker_number = forloop.index %}			
 			{% for speaker in speakers %}
-				{{ speaker[title] }}
-				<div class="panel speaker-panel {% if all_speaker['Is Large'] %}big{% endif %}">
+				<div class="panel speaker-panel big">
 					<div class="speaker-image relative">
 						<div class="speaker-links">
 							<a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
 							<a href="{{ speaker['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
 						</div>
 						{% if all_speaker['Is Large'] %}
-							<img src="{{ speaker['Red Image'] }}" alt="Speaker Name" class="avatar" />
+							<img src="{{ speaker['Red Image'] }}" alt="{{ speaker.title }}" class="avatar" />
 						{% else %}
 							<img src="{{ speaker['Featured Image'] }}" alt="Speaker Name" class="avatar" />
 						{% endif %}
