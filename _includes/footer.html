@@ -4,7 +4,7 @@
 <div class="sponsor-wrap pad-tb-140 relative" id="Sponsors">
 	<div class="section">
 		<ul class="sponsors-big">
-			{% assign premier_sponsors = site.sponsors | where: "Options", "Premier" %}
+			{% assign premier_sponsors = site.sponsors | where: "Type", "Premier" %}
 			{% for premier_sponsor in premier_sponsors %}
 			<li class="pad-tb-40">
 				<a href="{{ premier_sponsor.URL }}" target="_blank"><img src="{{ premier_sponsor['Image'] }}" alt="{{ premier_sponsor.title }}" /></a>
@@ -14,7 +14,7 @@
 		</ul>
 		<hr class="marg-b-40 white marg-t-40 divider" />
 		<ul class="sponsors-small pad-b-140">
-			{% assign standard_sponsors = site.sponsors | where: "Options", "Standard" %}
+			{% assign standard_sponsors = site.sponsors | where: "Type", "Standard" %}
 			{% for standard_sponsor in standard_sponsors %}
 			<li class="pad-tb-40">
 				<a href="{{ standard_sponsor.URL }}" target="_blank"><img src="{{ standard_sponsor.Image }}" alt="{{ standard_sponsor.title }}" /></a>
@@ -65,7 +65,7 @@
 		<div class="or left">
 			<h2 class="titles ta-center">or</h2>
 		</div>
-		<a href="<?php echo $registrationURL ?>" target="_blank" class="button bs">Register Today</a>
+		<a href="{{ site['Registration URL'] }}" target="_blank" class="button bs">Register Today</a>
 		<div class="push"></div>
 	</div>	
 </div>
@@ -77,7 +77,7 @@
 		<ul class="footer-meta">
 			<li>April 26-28, 2017</li>
 			<li class="middle"><span>Grapevine, TX</span></li>
-			<li><a href="<?php echo $registrationURL ?>" target="_blank">Register Today</a></li>
+			<li><a href="{{ site['Registration URL'] }}" target="_blank">Register Today</a></li>
 		</ul>
 		<div class="circles-half"><img src="{{ site.url }}/assets/images/squares-half.png" alt="Squares" /></div>
 	</div>
@@ -104,13 +104,13 @@
 				</ul>
 				<div class="left">
 					<p>Squares is a three-day experience for you, the maker. The conference brings designers and makers from across the globe together for the dual purpose of learning from world-changing thinkers and innovators and connecting with one another.</p>
-					<a href="<?php echo $registrationURL ?>" target="_blank" class="button">REGISTER</a>
+					<a href="{{ site['Registration URL'] }}" target="_blank" class="button">REGISTER</a>
 					<div class="social-menu">
 						<h2 class="titles serif">Follow Us</h2>
 						<div class="social-menu-icons">
-							<a href="http://twitter.com/squaressconf" target="_blank"><img src="<?php echo $imageURL ?>/menu-t.png" alt="Twitter" /></a>
-							<a href="http://facebook.com/squaresconference" target="_blank"><img src="<?php echo $imageURL ?>/menu-fb.png" alt="Facebook" /></a>
-							<a href="http://instagram.com/squaresconf" target="_blank" class="last"><img src="<?php echo $imageURL ?>/menu-i.png" alt="Instagram" /></a>
+							<a href="{{ site['Twitter URL'] }}" target="_blank"><img src="{{ site.url }}/assets/images/menu-t.png" alt="Twitter" /></a>
+							<a href="{{ site['Facebook URL'] }}" target="_blank"><img src="{{ site.url }}/assets/images/menu-fb.png" alt="Facebook" /></a>
+							<a href="{{ site['Instagram URL'] }}" target="_blank" class="last"><img src="{{ site.url }}/assets/images/menu-i.png" alt="Instagram" /></a>
 						</div>
 					</div>
 				</div>
