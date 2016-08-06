@@ -2,11 +2,14 @@
 title: Home
 date: 2016-08-03 22:50:00 -04:00
 permalink: "/"
+SEO:
+  Desc: 
 Speakers:
 - Ismael Burciaga
 - Ismael Burciaga
 - Ismael Burciaga
 - Ismael Burciaga
+layout: default
 ---
 
 <div class="what-is-squares">
