@@ -9,5 +9,6 @@ Body Class: about workshops
 Hero Text: Workshops<br><span>
 Hero Image: "/assets/images/hero-workshops.jpg"
 Is In Menu: true
+layout: workshops
 ---
 
