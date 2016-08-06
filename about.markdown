@@ -9,8 +9,6 @@ Body Class: about
 Hero Text: About<br><span>&amp; Team
 Hero Image: "/assets/images/hero-about.jpg"
 Is In Menu: true
-Team Members:
-- team: 
 layout: default
 ---
 
