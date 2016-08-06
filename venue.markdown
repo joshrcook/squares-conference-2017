@@ -9,5 +9,9 @@ Body Class: venue
 Hero Text: Venue<br><span>&amp; Parties
 Hero Image: "/assets/images/hero-venue.jpg"
 Is In Menu: true
+Venue Parties:
+- party: Opening Mixer
+- party: Opening Mixer
+- party: Opening Mixer
 ---
 
