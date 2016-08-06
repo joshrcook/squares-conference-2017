@@ -2,9 +2,6 @@
 title: Squares Conference
 timezone: America/New_York
 collections:
-  menus:
-    title: Menus
-    output: false
   parties:
     title: Parties
     output: false
@@ -16,6 +13,9 @@ collections:
     output: false
   sponsors:
     title: Sponsors
+    output: false
+  team:
+    title: Team
     output: false
   uploads:
     title: Uploads
@@ -78,6 +78,15 @@ defaults:
   values:
     Address Text: 
     Date/Time: 
+- scope:
+    path: ''
+    type: team
+  values:
+    Job Title: 
+    Featured Image: 
+    Red Image: 
+    Twitter URL: 
+    Website URL: 
 Company Name: |
   Circles Company
 Website Name: |
