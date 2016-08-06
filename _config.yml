@@ -25,7 +25,8 @@ defaults:
       Keywords: 
     Body Class: 
     Hero Title: 
-    Hero Image: 
+    Hero Image:
+    Is In Menu:
 - scope:
     path: ''
     type: speakers
