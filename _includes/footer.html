@@ -4,45 +4,38 @@
 <div class="sponsor-wrap pad-tb-140 relative" id="Sponsors">
 	<div class="section">
 		<ul class="sponsors-big">
+			{% for sponsor in site.sponsors | where: "Options", "Premier" %}
 			<li class="pad-tb-40">
-				<a href="http://myfonts.com" target="_blank"><img src="<?php echo $imageURL ?>/s-mailchimp.png" alt="My Fonts" /></a>
+				<a href="http://myfonts.com" target="_blank"><img src="{{ site.url }}/assets/images/s-mailchimp.png" alt="My Fonts" /></a>
 			</li>
-			<li class="pad-tb-40">
-				<a href="http://carbonads.net" target="_blank"><img src="<?php echo $imageURL ?>/s-flywheel.png" alt="Carbon Ads" /></a>
-			</li>
-			<li class="pad-tb-40">
-				<a href="http://foxypropaganda.com" target="_blank"><img src="<?php echo $imageURL ?>/s-invision.png" alt="Foxy Propganda" /></a>
-			</li>
-			<li class="pad-tb-40">
-				<a href="http://foxypropaganda.com" target="_blank"><img src="<?php echo $imageURL ?>/s-salesforce.png" alt="Foxy Propganda" /></a>
-			</li>
+			{% endfor %}
 			<div class="push"></div>
 		</ul>
 		<hr class="marg-b-40 white marg-t-40 divider" />
 		<ul class="sponsors-small pad-b-140">
 			<li class="pad-tb-40">
-				<a href="http://myfonts.com" target="_blank"><img src="<?php echo $imageURL ?>/s-myfonts.png" alt="My Fonts" /></a>
+				<a href="http://myfonts.com" target="_blank"><img src="{{ site.url }}/assets/images/s-myfonts.png" alt="My Fonts" /></a>
 			</li>
 			<li class="pad-tb-40">
-				<a href="http://carbonads.net" target="_blank"><img src="<?php echo $imageURL ?>/s-carbon.png" alt="Carbon Ads" /></a>
+				<a href="http://carbonads.net" target="_blank"><img src="{{ site.url }}/assets/images/s-carbon.png" alt="Carbon Ads" /></a>
 			</li>
 			<li class="pad-tb-40">
-				<a href="http://foxypropaganda.com" target="_blank"><img src="<?php echo $imageURL ?>/s-propaganda.png" alt="Foxy Propganda" /></a>
+				<a href="http://foxypropaganda.com" target="_blank"><img src="{{ site.url }}/assets/images/s-propaganda.png" alt="Foxy Propganda" /></a>
 			</li>
 			<li class="pad-tb-40">
-				<a href="http://smilebooth.com" target="_blank"><img src="<?php echo $imageURL ?>/s-smilebooth.png" alt="Smilebooth" /></a>
+				<a href="http://smilebooth.com" target="_blank"><img src="{{ site.url }}/assets/images/s-smilebooth.png" alt="Smilebooth" /></a>
 			</li>
 			<li class="pad-tb-40">
-				<a href="http://www.scoutbooks.com" target="_blank"><img src="<?php echo $imageURL ?>/s-scoutbooks.png" alt="Scoutbooks" /></a>
+				<a href="http://www.scoutbooks.com" target="_blank"><img src="{{ site.url }}/assets/images/s-scoutbooks.png" alt="Scoutbooks" /></a>
 			</li>
 			<li class="pad-tb-40">
-				<a href="http://www.scoutbooks.com" target="_blank"><img src="<?php echo $imageURL ?>/s-deep.png" alt="Scoutbooks" /></a>
+				<a href="http://www.scoutbooks.com" target="_blank"><img src="{{ site.url }}/assets/images/s-deep.png" alt="Scoutbooks" /></a>
 			</li>
 			<li class="pad-tb-40">
-				<a href="http://www.scoutbooks.com" target="_blank"><img src="<?php echo $imageURL ?>/s-scoutbooks.png" alt="Scoutbooks" /></a>
+				<a href="http://www.scoutbooks.com" target="_blank"><img src="{{ site.url }}/assets/images/s-scoutbooks.png" alt="Scoutbooks" /></a>
 			</li>
 			<li class="pad-tb-40 empty">
-				<a href="https://circlesco.com/conference/sponsors" target="_blank"><img src="<?php echo $imageURL ?>/s-empty.png" alt="This Could Be You" /></a>
+				<a href="https://circlesco.com/conference/sponsors" target="_blank"><img src="{{ site.url }}/assets/images/s-empty.png" alt="This Could Be You" /></a>
 			</li>
 			<div class="push"></div>
 		</ul>
@@ -55,11 +48,11 @@
 	<div class="section pad-t-140">
 		<div class="partner-logos relative">
 			<h2 class="small-titles rotate">Partners</h2>
-			<a href="http://aigadfw.org" target="_blank"><img src="<?php echo $imageURL ?>/p-aiga.png" alt="AIGA DFW" /></a>
-			<a href="http://printedthreads.com" target="_blank"><img src="<?php echo $imageURL ?>/p-printedthreads.png" alt="Printed Threads" /></a>
-			<a href="http://foxypropaganda.com" target="_blank"><img src="<?php echo $imageURL ?>/p-foxy.png" alt="Foxy Propaganda" /></a>
-			<a href="http://www.kindsnacks.com" target="_blank"><img src="<?php echo $imageURL ?>/p-kind.png" alt="KIND Healhty Snacks" /></a>
-			<a href="http://okpaper.com" target="_blank"><img src="<?php echo $imageURL ?>/p-ok.png" alt="OLMSTED-KIRK PAPER" /></a>
+			<a href="http://aigadfw.org" target="_blank"><img src="{{ site.url }}/assets/images/p-aiga.png" alt="AIGA DFW" /></a>
+			<a href="http://printedthreads.com" target="_blank"><img src="{{ site.url }}/assets/images/p-printedthreads.png" alt="Printed Threads" /></a>
+			<a href="http://foxypropaganda.com" target="_blank"><img src="{{ site.url }}/assets/images/p-foxy.png" alt="Foxy Propaganda" /></a>
+			<a href="http://www.kindsnacks.com" target="_blank"><img src="{{ site.url }}/assets/images/p-kind.png" alt="KIND Healhty Snacks" /></a>
+			<a href="http://okpaper.com" target="_blank"><img src="{{ site.url }}/assets/images/p-ok.png" alt="OLMSTED-KIRK PAPER" /></a>
 			<div class="push"></div>
 		</div>
 	</div>
@@ -94,14 +87,14 @@
 
 <div class="bottom">
 	<div class="section relative">
-		<div class="circles-logo"><img src="<?php echo $imageURL ?>/logo-squares-small.png" alt="Squares" /></div>
+		<div class="circles-logo"><img src="{{ site.url }}/assets/images/logo-squares-small.png" alt="Squares" /></div>
 		<hr class="marg-b-80 marg-t-80 divider" />
 		<ul class="footer-meta">
 			<li>April 26-28, 2017</li>
 			<li class="middle"><span>Grapevine, TX</span></li>
 			<li><a href="<?php echo $registrationURL ?>" target="_blank">Register Today</a></li>
 		</ul>
-		<div class="circles-half"><img src="<?php echo $imageURL ?>/squares-half.png" alt="Squares" /></div>
+		<div class="circles-half"><img src="{{ site.url }}/assets/images/squares-half.png" alt="Squares" /></div>
 	</div>
 </div>
 <div class="footer">
