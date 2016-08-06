@@ -21,7 +21,7 @@ defaults:
       Desc: 
       Keywords: 
     Body Class: 
-    Hero Text: 
+    Hero Title: 
     Hero Image: 
 - scope:
     path: ''
