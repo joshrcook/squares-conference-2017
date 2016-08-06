@@ -14,6 +14,7 @@ Speakers:
 - Ismael Burciaga
 - Ismael Burciaga
 - Ismael Burciaga
+Is In Menu: true
 layout: home
 ---
 
