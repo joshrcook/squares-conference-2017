@@ -71,9 +71,9 @@
 			</div>
 	</div>
 	<div class="red-border">
-		<?php if (!empty($heroHomeText)): ?>
-			<h4><?php echo $heroHomeText ?></h4>
-		<?php endif ?>
+		{% if page['Hero Home Text'] %}
+			<h4><{{ page['Hero Home Text'] }}</h4>
+		{% endif %}
 		<div class="squares-empty"></div>
 		<div class="squares-container">
 		</div>
