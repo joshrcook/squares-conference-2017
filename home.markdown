@@ -37,50 +37,22 @@ layout: default
 <div class="home-speakers-wrap pad-tb-180 relative">
 	<div class="section home-speakers relative">
 		<h2 class="small-titles red rotate">Speakers</h2>
-		<div class="panel speaker-panel">
-			<div class="speaker-image relative">
-				<div class="speaker-links">
-					<a href="http://marykatemcdevitt.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-					<a href="http://twitter.com/marykatemcd" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+		{% for featured_speaker in page.Speakers %}
+			{% assign single_speaker = site.speakers | where: "title", featured_speaker %}
+			{% for speaker in single_speaker %}
+				<div class="panel speaker-panel {% cycle '', '', '', 'last' %}">
+					<div class="speaker-image relative">
+						<div class="speaker-links">
+							<a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
+							<a href="{{ speaker['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+						</div>
+						<img src="{{ speaker['Featured Image'] }}" alt="{{ speaker.title }}" class="avatar" />
+					</div>
+					<h2>{{ speaker.title }}</h2>
+					<h3>{{ speaker['Job Title'] }}</h3>
 				</div>
-				<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
-			</div>
-			<h2>Ismael Burciaga</h2>
-			<h3>director of ux at Nasdaq</h3>
-		</div>
-		<div class="panel speaker-panel second">
-			<div class="speaker-image relative">
-				<div class="speaker-links">
-					<a href="http://marykatemcdevitt.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-					<a href="http://twitter.com/marykatemcd" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
-				</div>
-				<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
-			</div>
-			<h2>Ismael Burciaga</h2>
-			<h3>director of ux at Nasdaq</h3>
-		</div>
-		<div class="panel speaker-panel">
-			<div class="speaker-image relative">
-				<div class="speaker-links">
-					<a href="http://marykatemcdevitt.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-					<a href="http://twitter.com/marykatemcd" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
-				</div>
-				<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
-			</div>
-			<h2>Ismael Burciaga</h2>
-			<h3>director of ux at Nasdaq</h3>
-		</div>
-		<div class="panel speaker-panel last">
-			<div class="speaker-image relative">
-				<div class="speaker-links">
-					<a href="http://marykatemcdevitt.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-					<a href="http://twitter.com/marykatemcd" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
-				</div>
-				<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
-			</div>
-			<h2>Ismael Burciaga</h2>
-			<h3>director of ux at Nasdaq</h3>
-		</div>
+			{% endfor %}
+		{% endfor %}
 		<div class="push"></div>
 		<h3 class="small-titles grey rotate-right"><a href="http://squaresconference.com/2017/speakers.php">View all speakers</a></h3>
 	</div>
