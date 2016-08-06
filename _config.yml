@@ -4,7 +4,7 @@ timezone: America/New_York
 collections:
   menus:
     title: Menus
-    output: true
+    output: false
   parties:
     title: Parties
     output: false
