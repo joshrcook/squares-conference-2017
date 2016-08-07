@@ -100,10 +100,13 @@ defaults:
     Date: 
     Image: 
     Type: Workshop, Panel, Party, or N/A
-    Info: 
-      Workshops: [""]
-      Panels: [""]
-      Parties: [""]
+    Info:
+      Workshops:
+      - ''
+      Panels:
+      - ''
+      Parties:
+      - ''
 - scope:
     path: ''
     type: panelists
