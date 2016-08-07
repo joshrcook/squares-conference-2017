@@ -107,7 +107,7 @@ defaults:
   values:
     Date: 
     Image: 
-    Type: Workshop, Panel, Party, or Session
+    Type: Workshop, Panel, Party, Session or N/A
     Info:
       Workshops:
       - ''
