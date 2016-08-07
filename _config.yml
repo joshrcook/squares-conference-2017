@@ -32,7 +32,7 @@ collections:
   workshops:
     title: Workshops
     output: false
-  schedule: 
+  schedule:
     title: schedule
     output: false
 defaults:
@@ -108,8 +108,8 @@ defaults:
     Info:
       Workshops:
       - ''
-      Panels:
-      Parties:
+      Panels: 
+      Parties: 
       Sessions: 
 - scope:
     path: ''
