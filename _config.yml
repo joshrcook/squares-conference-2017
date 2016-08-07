@@ -2,6 +2,9 @@
 title: Squares Conference
 timezone: America/New_York
 collections:
+  panelists:
+    title: Panelists
+    output: false
   panels:
     title: Panels
     output: false
@@ -28,9 +31,6 @@ collections:
     output: true
   workshops:
     title: Workshops
-    output: false
-  panelists:
-    title: panelists
     output: false
 defaults:
 - scope:
