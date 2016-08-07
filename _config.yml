@@ -2,12 +2,27 @@
 title: Squares Conference
 timezone: America/New_York
 collections:
+  panelists:
+    title: Panelists
+    output: false
+  panels:
+    title: Panels
+    output: false
   parties:
     title: Parties
     output: false
+  people:
+    title: People
+    output: true
   posts:
     title: Posts
     output: true
+  schedule:
+    title: Schedule
+    output: false
+  sessions:
+    title: Sessions
+    output: false
   speakers:
     title: Speakers
     output: false
@@ -45,9 +60,6 @@ defaults:
     Red Image: 
     Twitter URL: 
     Website URL: 
-    Options:
-      Is Featured: 
-      Is Large: 
     Topic Title: 
     Topic Description: 
 - scope:
@@ -64,7 +76,9 @@ defaults:
     type: workshops
   values:
     Category: Design, UX, Front-End, Development, or Product
-    Time: 
+    Track: 1 or 2
+    Date: 
+    Time: ie. 1.5 hrs
     Teacher:
       Name: 
       Job Title: 
@@ -76,8 +90,9 @@ defaults:
     path: ''
     type: parties
   values:
+    Location Name: 
     Address Text: 
-    Date/Time: 
+    Date: 
 - scope:
     path: ''
     type: team
@@ -87,6 +102,40 @@ defaults:
     Red Image: 
     Twitter URL: 
     Website URL: 
+- scope:
+    path: ''
+    type: schedule
+  values:
+    Date: 
+    Image: 
+    Type: Workshop, Panel, Party, Session or N/A
+    Info:
+      Workshops:
+      - ''
+      Panel: 
+      Party: 
+      Session: 
+- scope:
+    path: ''
+    type: panelists
+  values:
+    Job Title: 
+    Featured Image: 
+    Red Image: 
+    Twitter URL: 
+    Website URL: 
+    Panel: 
+- scope:
+    path: ''
+    type: panels
+  values:
+    Date: 
+    Image: 
+- scope:
+    path: ''
+    type: sessions
+  values:
+    Speaker: 
 Company Name: |
   Circles Company
 Website Name: |
