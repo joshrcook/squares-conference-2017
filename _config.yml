@@ -99,18 +99,10 @@ defaults:
   values:
     Datetime: 
     Type: Session, Workshop, Panel, or Party
-    Workshops: 
-    Panels: 
-    Parties: 
-- scope:
-    path: ''
-    type: sessions
-  values:
-    Datetime: 
-    Type: Session, Workshop, Panel, or Party
-    Workshops: 
-    Panels: 
-    Parties: 
+    Session Details: 
+      Workshop: 
+      Panel: 
+      Party: 
 - scope:
     path: ''
     type: panelists
