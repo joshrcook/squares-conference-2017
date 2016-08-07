@@ -100,7 +100,7 @@ defaults:
     Website URL: 
 - scope:
     path: ''
-    type: sessions
+    type: schedule
   values:
     Date: 
     Image: 
