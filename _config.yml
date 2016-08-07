@@ -26,6 +26,12 @@ collections:
   workshops:
     title: Workshops
     output: false
+  panels: 
+    title: Panels
+    output: false
+  panelists: 
+    title: panelists
+    output: false
 defaults:
 - scope:
     path: ''
@@ -48,9 +54,6 @@ defaults:
     Red Image: 
     Twitter URL: 
     Website URL: 
-    Options:
-      Is Featured: 
-      Is Large: 
     Topic Title: 
     Topic Description: 
 - scope:
@@ -90,6 +93,34 @@ defaults:
     Red Image: 
     Twitter URL: 
     Website URL: 
+- scope:
+    path: ''
+    type: sessions
+  values:
+    Datetime: 
+    Type: Session, Workshop, Panel, or Party
+    Workshops: 
+    Panels: 
+    Parties: 
+- scope:
+    path: ''
+    type: sessions
+  values:
+    Datetime: 
+    Type: Session, Workshop, Panel, or Party
+    Workshops: 
+    Panels: 
+    Parties: 
+- scope:
+    path: ''
+    type: panelists
+  values:
+    Job Title: 
+    Featured Image: 
+    Red Image: 
+    Twitter URL: 
+    Website URL: 
+    Panel: 
 Company Name: |
   Circles Company
 Website Name: |
