@@ -14,9 +14,6 @@ collections:
   posts:
     title: Posts
     output: true
-  schedule:
-    title: Schedule
-    output: true
   sessions:
     title: Sessions
     output: false
