@@ -70,7 +70,7 @@ defaults:
     type: workshops
   values:
     Category: Design, UX, Front-End, Development, or Product
-    Time: 
+    Date: 
     Teacher:
       Name: 
       Job Title: 
@@ -83,7 +83,7 @@ defaults:
     type: parties
   values:
     Address Text: 
-    Date/Time: 
+    Date: 
 - scope:
     path: ''
     type: team

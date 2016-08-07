@@ -37,7 +37,10 @@ layout: default
 	<div class="right">
 		<div class="schedule-right">
 			
-			
+			{% assign schedule_documents = site.documents | sort: "meta.Date" %}
+			{% for document in schedule_documents | sort: "meta.Date" %}
+				{{ document.title }}
+			{% endfor %}
 			<div class="schedule-row">
 				<div class="schedule-time ta-right">
 					<h2 class="titles">08:00<br><span>am</span></h2>	
