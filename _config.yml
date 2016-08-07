@@ -14,6 +14,9 @@ collections:
   posts:
     title: Posts
     output: true
+  schedule:
+    title: Schedule
+    output: false
   sessions:
     title: Sessions
     output: false
@@ -31,9 +34,6 @@ collections:
     output: true
   workshops:
     title: Workshops
-    output: false
-  schedule:
-    title: schedule
     output: false
 defaults:
 - scope:
