@@ -109,6 +109,12 @@ defaults:
     Twitter URL: 
     Website URL: 
     Panel: 
+- scope:
+    path: ''
+    type: panels
+  values:
+    Date: 
+    Image: 
 Company Name: |
   Circles Company
 Website Name: |
