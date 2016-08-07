@@ -32,6 +32,9 @@ collections:
   workshops:
     title: Workshops
     output: false
+  schedule: 
+    title: schedule
+    output: false
 defaults:
 - scope:
     path: ''
@@ -70,7 +73,9 @@ defaults:
     type: workshops
   values:
     Category: Design, UX, Front-End, Development, or Product
+    Track: 1 or 2
     Date: 
+    Time: ie. 1.5 hrs
     Teacher:
       Name: 
       Job Title: 
@@ -99,14 +104,13 @@ defaults:
   values:
     Date: 
     Image: 
-    Type: Workshop, Panel, Party, or N/A
+    Type: Workshop, Panel, Party, or Session
     Info:
       Workshops:
       - ''
       Panels:
-      - ''
       Parties:
-      - ''
+      Sessions: 
 - scope:
     path: ''
     type: panelists
