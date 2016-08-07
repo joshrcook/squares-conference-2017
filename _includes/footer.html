@@ -4,7 +4,7 @@
 <div class="sponsor-wrap pad-tb-140 relative" id="Sponsors">
 	<div class="section">
 		<ul class="sponsors-big">
-			{% assign premier_sponsors = site.sponsors | where: "Type", "Premier" %}
+			{% assign premier_sponsors = site.sponsors | where: "Type", "Premier" | sort: "position" %}
 			{% for premier_sponsor in premier_sponsors %}
 			<li class="pad-tb-40">
 				<a href="{{ premier_sponsor.URL }}" target="_blank"><img src="{{ premier_sponsor['Image'] }}" alt="{{ premier_sponsor.title }}" /></a>
@@ -14,14 +14,14 @@
 		</ul>
 		<hr class="marg-b-40 white marg-t-40 divider" />
 		<ul class="sponsors-small pad-b-140">
-			{% assign standard_sponsors = site.sponsors | where: "Type", "Standard" %}
+			{% assign standard_sponsors = site.sponsors | where: "Type", "Standard" | sort: "position" %}
 			{% for standard_sponsor in standard_sponsors %}
 			<li class="pad-tb-40">
 				<a href="{{ standard_sponsor.URL }}" target="_blank"><img src="{{ standard_sponsor.Image }}" alt="{{ standard_sponsor.title }}" /></a>
 			</li>
 			{% endfor %}
 			<li class="pad-tb-40 empty">
-				<a href="https://circlesco.com/conference/sponsors" target="_blank"><img src="{{ site.url }}/assets/images/s-empty.png" alt="This Could Be You" /></a>
+				<a href="https://circlesco.com/conference/sponsors" target="_blank"><img src="/assets/images/s-empty.png" alt="This Could Be You" /></a>
 			</li>
 			<div class="push"></div>
 		</ul>
@@ -34,7 +34,7 @@
 	<div class="section pad-t-140">
 		<div class="partner-logos relative">
 			<h2 class="small-titles rotate">Partners</h2>
-			{% assign partners = site.sponsors | where: "Type", "Partner" %}
+			{% assign partners = site.sponsors | where: "Type", "Partner" | sort: "position" %}
 			{% for partner in partners %}
 				<a href="{{ partner.URL }}" target="_blank"><img src="{{ partner.Image }}" alt="{{ partner.title }}" /></a>
 			{% endfor %}
@@ -72,18 +72,18 @@
 
 <div class="bottom">
 	<div class="section relative">
-		<div class="circles-logo"><img src="{{ site.url }}/assets/images/logo-squares-small.png" alt="Squares" /></div>
+		<div class="circles-logo"><img src="/assets/images/logo-squares-small.png" alt="Squares" /></div>
 		<hr class="marg-b-80 marg-t-80 divider" />
 		<ul class="footer-meta">
 			<li>April 26-28, 2017</li>
 			<li class="middle"><span>Grapevine, TX</span></li>
 			<li><a href="{{ site['Registration URL'] }}" target="_blank">Register Today</a></li>
 		</ul>
-		<div class="circles-half"><img src="{{ site.url }}/assets/images/squares-half.png" alt="Squares" /></div>
+		<div class="circles-half"><img src="/assets/images/squares-half.png" alt="Squares" /></div>
 	</div>
 </div>
 <div class="footer">
-	<p class="copyright">&copy; Copyright <?php echo date('Y'); ?> <?php echo $companyName ?>. All rights reserved. <a href="http://squaresconference.com/refund-policy" target="_blank">Refund Policy</a>&nbsp;/&nbsp;<a href="http://squaresconference.com/conduct" target="_blank">Code of Conduct</a>&nbsp;/&nbsp;<a href="mailto:hello@squaresconference.com" target="_blank">Contact Us</a></p>
+	<p class="copyright">&copy; Copyright {{ site.time | date: '%y' }} {{ site['Company Name'] }}. All rights reserved. <a href="http://squaresconference.com/refund-policy" target="_blank">Refund Policy</a>&nbsp;/&nbsp;<a href="http://squaresconference.com/conduct" target="_blank">Code of Conduct</a>&nbsp;/&nbsp;<a href="mailto:hello@squaresconference.com" target="_blank">Contact Us</a></p>
 	<p class="copyright right">Designed by Ismael Burciaga of <a href="http://reblventures.com" target="_blank">REBL</a></p>
 	<div class="push"></div>
 </div>
@@ -106,9 +106,9 @@
 					<div class="social-menu">
 						<h2 class="titles serif">Follow Us</h2>
 						<div class="social-menu-icons">
-							<a href="{{ site['Twitter URL'] }}" target="_blank"><img src="{{ site.url }}/assets/images/menu-t.png" alt="Twitter" /></a>
-							<a href="{{ site['Facebook URL'] }}" target="_blank"><img src="{{ site.url }}/assets/images/menu-fb.png" alt="Facebook" /></a>
-							<a href="{{ site['Instagram URL'] }}" target="_blank" class="last"><img src="{{ site.url }}/assets/images/menu-i.png" alt="Instagram" /></a>
+							<a href="{{ site['Twitter URL'] }}" target="_blank"><img src="/assets/images/menu-t.png" alt="Twitter" /></a>
+							<a href="{{ site['Facebook URL'] }}" target="_blank"><img src="/assets/images/menu-fb.png" alt="Facebook" /></a>
+							<a href="{{ site['Instagram URL'] }}" target="_blank" class="last"><img src="/assets/images/menu-i.png" alt="Instagram" /></a>
 						</div>
 					</div>
 				</div>
