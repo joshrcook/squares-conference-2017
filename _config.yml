@@ -99,7 +99,7 @@ defaults:
   values:
     Datetime: 
     Type: Session, Workshop, Panel, or Party
-    Session Details: 
+    Session Details:
       Workshop: 
       Panel: 
       Party: 
