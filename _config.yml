@@ -55,9 +55,13 @@ defaults:
     path: ''
     type: speakers
   values:
+    Job Title: 
+    Featured Image: 
+    Red Image: 
+    Twitter URL: 
+    Website URL: 
     Topic Title: 
     Topic Description: 
-    Person: 
 - scope:
     path: ''
     type: sponsors
@@ -75,7 +79,13 @@ defaults:
     Track: 1 or 2
     Date: 
     Time: ie. 1.5 hrs
-    Person: 
+    Teacher:
+      Name: 
+      Job Title: 
+      Featured Image: 
+      Red Image: 
+      Twitter URL: 
+      Website URL: 
 - scope:
     path: ''
     type: parties
@@ -86,7 +96,11 @@ defaults:
     path: ''
     type: team
   values:
-    Person: 
+    Job Title: 
+    Featured Image: 
+    Red Image: 
+    Twitter URL: 
+    Website URL: 
 - scope:
     path: ''
     type: schedule
@@ -97,14 +111,19 @@ defaults:
     Info:
       Workshops:
       - ''
-      Panels: 
-      Parties: 
-      Sessions: 
+      Panel: 
+      Party: 
+      Session: 
 - scope:
     path: ''
     type: panelists
   values:
-    Person: 
+    Job Title: 
+    Featured Image: 
+    Red Image: 
+    Twitter URL: 
+    Website URL: 
+    Panel: 
 - scope:
     path: ''
     type: panels
@@ -115,17 +134,7 @@ defaults:
     path: ''
     type: sessions
   values:
-    Speaker:
-      Person: 
-- scope:
-    path: ''
-    type: people
-  values:
-    Job Title: 
-    Featured Image: 
-    Red Image: 
-    Twitter URL: 
-    Website URL: 
+    Speaker: 
 Company Name: |
   Circles Company
 Website Name: |
