@@ -101,9 +101,9 @@ defaults:
     Image: 
     Type: Workshop, Panel, Party, or N/A
     Info: 
-      Workshop: []
-      Panel: []
-      Party: []
+      Workshops: [""]
+      Panels: [""]
+      Parties: [""]
 - scope:
     path: ''
     type: panelists
