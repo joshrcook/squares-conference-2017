@@ -130,6 +130,21 @@ defaults:
   values:
     Date: 
     Image: 
+- scope:
+    path: ''
+    type: sessions
+  values:
+    Speaker: 
+      Person: 
+- scope:
+    path: ''
+    type: people
+  values:
+    Job Title: 
+    Featured Image: 
+    Red Image: 
+    Twitter URL: 
+    Website URL: 
 Company Name: |
   Circles Company
 Website Name: |
