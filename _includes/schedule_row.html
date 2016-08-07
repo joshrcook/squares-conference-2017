@@ -1,0 +1,20 @@
+<div class="schedule-row">
+	<div class="schedule-time ta-right">
+		<h2 class="titles">{{ schedule_item.Date | date: "%I:%M" }}<br><span>{{ schedule_item.Date | date: "%p" | downcase }}</span></h2>	
+	</div>
+	<div class="schedule-content">
+		{% case schedule_item.Type %}
+			{% when "Workshop" %}
+				{% include schedule_workshop.html %}
+			{% when "Panel" %}
+				{% include schedule_panel.html %}
+			{% when "Party" %}
+				{% include schedule_party.html %}
+			{% when "Session" %}
+				{% include schedule_session.html %}
+			{% else %}
+				{% include schedule_na.html %}
+		{% endcase %}
+	</div>
+	<div class="push"></div>
+</div>
