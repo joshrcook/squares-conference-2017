@@ -10,9 +10,10 @@ Hero Text: Schedule
 Hero Image: "/assets/images/hero-schedule.jpg"
 Is In Menu: true
 Schedule:
-- Session: Registration & Coffee
-- Workshop: 'Prototyping: Beyond The Wireframe'
-- Workshop: 'Prototyping: Beyond The Wireframe'
+- - Session: Registration & Coffee
+- - Workshop: 'Prototyping: Beyond The Wireframe'
+  - Workshop: 'Prototyping: Beyond The Wireframe'
+- - Workshop: 'Prototyping: Beyond The Wireframe'
 layout: default
 ---
 
