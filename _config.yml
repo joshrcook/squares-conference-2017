@@ -55,6 +55,7 @@ defaults:
     path: ''
     type: speakers
   values:
+    Is Featured: 
     Job Title: 
     Featured Image: 
     Red Image: 

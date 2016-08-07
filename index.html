@@ -2,6 +2,7 @@
 title: Home
 date: 2016-08-03 22:50:00 -04:00
 position: 0
+permalink: "/"
 SEO:
   Title: 'Squares Conference: A design & dev conference by Circles Co.'
 Body Class: home
@@ -44,21 +45,19 @@ layout: default
 <div class="home-speakers-wrap pad-tb-180 relative">
 	<div class="section home-speakers relative">
 		<h2 class="small-titles red rotate">Speakers</h2>
-		{% for featured_speaker in page.Speakers %}
-			{% assign single_speaker = site.speakers | where: "title", featured_speaker %}
-			{% for speaker in single_speaker %}
-				<div class="panel speaker-panel {% cycle '', '', '', 'last' %}">
-					<div class="speaker-image relative">
-						<div class="speaker-links">
-							<a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-							<a href="{{ speaker['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
-						</div>
-						<img src="{{ speaker['Featured Image'] }}" alt="{{ speaker.title }}" class="avatar" />
+		{% assign featured_speakers = site.speakers | where: "Is Featured", true %}
+		{% for speaker in featured_speakers %}
+			<div class="panel speaker-panel {% cycle '', '', '', 'last' %}">
+				<div class="speaker-image relative">
+					<div class="speaker-links">
+						<a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
+						<a href="{{ speaker['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
 					</div>
-					<h2>{{ speaker.title }}</h2>
-					<h3>{{ speaker['Job Title'] }}</h3>
+					<img src="{{ speaker['Featured Image'] }}" alt="{{ speaker.title }}" class="avatar" />
 				</div>
-			{% endfor %}
+				<h2>{{ speaker.title }}</h2>
+				<h3>{{ speaker['Job Title'] }}</h3>
+			</div>
 		{% endfor %}
 		<div class="push"></div>
 		{% assign speakers_page = site.pages | where: "title", "Speakers" %}
@@ -70,7 +69,7 @@ layout: default
 </div>
 
 <div class="double relative">
-	<div class="left bg-image relative" style="background-image: url(http://squaresconference.com/2017/images/bg-kim.jpg);">
+	<div class="left bg-image relative" style="background-image: url(/assets/images/bg-kim.jpg);">
 		<h6 class="rotate">Photo by Cory Hale</h6>
 	</div>
 	<div class="right relative">
