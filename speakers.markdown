@@ -24,7 +24,9 @@ layout: default
 						<a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
 						<a href="{{ speaker['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
 					</div>
-					{% if speaker_title.is_red %}
+
+					{% assign is_red = forloop.index0 | modulo: 5 %}
+					{% if is_red == 0 %}
 						<img src="http://squaresconference.com/2017/images/speaker-red.jpg" alt="Speaker Name" class="avatar" />
 					{% else %}
 						<img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
