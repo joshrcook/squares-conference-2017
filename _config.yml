@@ -97,12 +97,8 @@ defaults:
     path: ''
     type: sessions
   values:
-    Datetime: 
-    Type: Session, Workshop, Panel, or Party
-    Session Details:
-      Workshop: 
-      Panel: 
-      Party: 
+    Date: 
+    Image: 
 - scope:
     path: ''
     type: panelists
