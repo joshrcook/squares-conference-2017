@@ -42,7 +42,6 @@ layout: default
 	<div class="right">
 		<div class="schedule-right">
 			
-			
 			<div class="schedule-row">
 				<div class="schedule-time ta-right">
 					<h2 class="titles">08:00<br><span>am</span></h2>	

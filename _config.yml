@@ -99,6 +99,11 @@ defaults:
   values:
     Date: 
     Image: 
+    Type: Workshop, Panel, Party, or N/A
+    Info: 
+      Workshop: []
+      Panel: []
+      Party: []
 - scope:
     path: ''
     type: panelists
