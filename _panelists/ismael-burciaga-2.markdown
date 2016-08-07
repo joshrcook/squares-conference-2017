@@ -6,6 +6,6 @@ Featured Image: "/uploads/speaker-placeholder.jpg"
 Red Image: "/uploads/speaker-red.jpg"
 Twitter URL: "#"
 Website URL: "#"
-Panel: Panel 1
+Panel: Panel 2
 ---
 
