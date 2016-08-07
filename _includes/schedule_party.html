@@ -1,0 +1,14 @@
+{% assign single_party = site.parties | where: "title", schedule_item.Info.Party %}
+{% for party in single_party %}
+	<div class="schedule-avatar">
+		<img src="{{ schedule_item.Image }}" alt="{{ schedule_item.title }}"  />
+	</div>
+	<div class="schedule-meta">
+		<h3 class="schedule-type">Parties</h3>
+		<h2 class="titles black">{{ party.title }}</h2>
+		<hr class="marg-b-30 marg-t-30 divider ta-left" />
+		<h5>{{ party['Location Name'] }}</h5>
+		{{ party['Address Text'] | markdownify }}
+	</div>
+	<div class="push"></div>
+{% endfor %}

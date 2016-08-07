@@ -42,65 +42,26 @@ layout: default
 	<div class="right">
 		<div class="schedule-right">
 			
-			{% for session in site.sessions | sort: "meta.Date" %}
-				{% assign day = session.Date | date: "%A" %}
+			{% for schedule_item in site.schedule | sort: "meta.Date" %}
+				{% assign day = schedule_item.Date | date: "%A" %}
+				{% assign schedule_incrementer = 1 %}
 				{% if day == "Wednesday" %}
 					<div class="schedule-row">
 						<div class="schedule-time ta-right">
-							<h2 class="titles">{{ session.Date | date: "%I:%M" }}<br><span>{{ session.Date | date: "%p" | downcase }}</span></h2>	
+							<h2 class="titles">{{ schedule_item.Date | date: "%I:%M" }}<br><span>{{ schedule_item.Date | date: "%p" | downcase }}</span></h2>	
 						</div>
 						<div class="schedule-content">
-							{% case session.Type %}
+							{% case schedule_item.Type %}
 								{% when "Workshop" %}
-									{% for workshop_title in session.Info.Workshops %}
-										{% assign single_workshop = site.workshops | where: "title", workshop_title %}
-										{% for workshop in single_workshop %}
-											<div class="schedule-panel">
-												<div class="schedule-avatar">
-													<img src="{{ workshop.Teacher['Featured Image'] }}" alt="Speaker Name"  />
-												</div>
-												<div class="schedule-meta">
-													<h3 class="schedule-type">Track I - 1.5 hrs</h3>
-													<h2 class="titles">{{ workshop.Teacher.Name }}</h2>
-													<h4 class="job-title">{{ workshop.Teacher['Job Title'] }}</h4>
-													<hr class="marg-b-30 marg-t-30 divider ta-left" />
-													<h5>{{ workshop.title }}</h5>
-													{{ workshop.content | markdonwify }}
-												</div>
-												<div class="push"></div>
-											</div>
-										{% endfor %}
-									{% endfor %}
+									{% include schedule_workshop.html %}
 								{% when "Panel" %}
-									{% for }
-								    <div class="schedule-avatar">
-										<img src="{{ session.Image }}" alt="Speaker Name"  />
-									</div>
-									<div class="schedule-meta">
-										<h3 class="schedule-type">Panel 1</h3>
-										<h2 class="titles red">Panel I</h2>
-										<h4 class="job-title">ismael burciaga, travis gates, michael willburn, stephanie henderson, gabriel peters, steven hall</h4>
-										<hr class="marg-b-30 marg-t-30 divider ta-left" />
-										<div class="schedule-panels">
-											<img src="/assets/images/speaker-red.jpg" alt="Speaker Name"  />
-											<img src="/assets/images/speaker-red.jpg" alt="Speaker Name"  />
-											<img src="/assets/images/speaker-red.jpg" alt="Speaker Name"  />
-											<img src="/assets/images/speaker-red.jpg" alt="Speaker Name"  />
-											<img src="/assets/images/speaker-red.jpg" alt="Speaker Name"  />
-											<img src="/assets/images/speaker-red.jpg" alt="Speaker Name"  />
-											<img src="/assets/images/speaker-red.jpg" alt="Speaker Name"  />
-										</div>
-									</div>
-									<div class="push"></div>
+									{% include schedule_panel.html %}
 								{% when "Party" %}
-
+									{% include schedule_party.html %}
+								{% when "Session" %}
+									{% include schedule_session.html %}
 								{% else %}
-									<div class="schedule-avatar">
-										<img src="{{ session.Image }}" alt="Speaker Name" class="avatar" />
-									</div>
-									<div class="schedule-meta no-description">
-										<h2 class="titles">{{ session.title }}</h2>
-									</div>
+									{% include schedule_na.html %}
 							{% endcase %}
 						</div>
 						<div class="push"></div>

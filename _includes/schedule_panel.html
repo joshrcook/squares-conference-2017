@@ -1,0 +1,21 @@
+{% assign panelists = site.panelists | where: "Panel", schedule_item.Info.Panel %}
+<div class="schedule-avatar">
+	<img src="{{ schedule_item.Image }}" alt="{{ schedule_item.title }}"  />
+</div>
+<div class="schedule-meta">
+	<h3 class="schedule-type">{{ schedule_item.Info.Panel }}</h3>
+	{% case schedule_item.Info.Panel %}
+		{% when "Panel 1" %}
+			<h2 class="titles red">Panel I</h2>
+		{% when "Panel 2" %}
+			<h2 class="titles red">Panel II</h2>
+	{% endcase %}
+	<h4 class="job-title">{{ panelists | join: ', ' }}</h4>
+	<hr class="marg-b-30 marg-t-30 divider ta-left" />
+	<div class="schedule-panels">
+		{% for panelist in panelists %}
+			<img src="{{ panelist['Red Image'] }}" alt="{{ panelist.title }}"  />
+		{% endfor %}
+	</div>
+</div>
+<div class="push"></div>

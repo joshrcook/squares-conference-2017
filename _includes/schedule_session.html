@@ -1,0 +1,18 @@
+{% assign single_session = site.sessions | where: "title", schedule_item.Info.Session %}
+{% for session in single_session %}
+	{% assign single_speaker = site.speakers | where: "title", session.Speaker %}
+	{% for speaker in single_speaker %}
+		<div class="schedule-avatar">
+			<img src="{{ speaker['Featured Image'] }}" alt="{{ speaker.title }}"  />
+		</div>
+		<div class="schedule-meta">
+			<h3 class="schedule-type">Session {% cycle 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X' %}</h3>
+			<h2 class="titles">{{ speaker.title }}</h2>
+			<h4 class="job-title">{{ speaker['Job Title'] }}</h4>
+			<hr class="marg-b-30 marg-t-30 divider ta-left" />
+			<h5>{{ session.title }}</h5>
+			{{ session.content | markdownify }}
+		</div>
+		<div class="push"></div>
+	{% endfor %}
+{% endfor %}

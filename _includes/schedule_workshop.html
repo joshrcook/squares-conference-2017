@@ -1,0 +1,19 @@
+{% for workshop_title in schedule_item.Info.Workshops %}
+	{% assign single_workshop = site.workshops | where: "title", workshop_title %}
+	{% for workshop in single_workshop %}
+		<div class="schedule-panel">
+			<div class="schedule-avatar">
+				<img src="{{ workshop.Teacher['Featured Image'] }}" alt="Speaker Name"  />
+			</div>
+			<div class="schedule-meta">
+				<h3 class="schedule-type">Track I - 1.5 hrs</h3>
+				<h2 class="titles">{{ workshop.Teacher.Name }}</h2>
+				<h4 class="job-title">{{ workshop.Teacher['Job Title'] }}</h4>
+				<hr class="marg-b-30 marg-t-30 divider ta-left" />
+				<h5>{{ workshop.title }}</h5>
+				{{ workshop.content | markdonwify }}
+			</div>
+			<div class="push"></div>
+		</div>
+	{% endfor %}
+{% endfor %}
