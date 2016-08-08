@@ -20,15 +20,15 @@ layout: default
 ">
 <div class="speaker-image relative">
 <div class="speaker-links">
-<a href="{{ speaker\['Website URL'\] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-<a href="{{ speaker\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+<a href="{{ speaker\['Website URL'\] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
+<a href="{{ speaker\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
 </div>
 
                     {% assign is_red = forloop.index0 | modulo: 5 %}
                     {% if is_red == 0 %}
-                        <img src="http://squaresconference.com/2017/images/speaker-red.jpg" alt="Speaker Name" class="avatar" />
+                        <img src="/assets/images/speaker-red.jpg" alt="Speaker Name" class="avatar" />
                     {% else %}
-                        <img src="http://squaresconference.com/2017/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
+                        <img src="/assets/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" />
                     {% endif %}
                 </div>
                 <h2>{{ speaker.title }}</h2>
@@ -58,8 +58,8 @@ layout: default
 ">
 <div class="speaker-image relative">
 <div class="speaker-links">
-<a href="{{ panelist\['Website URL'\] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-<a href="{{ panelist\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+<a href="{{ panelist\['Website URL'\] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
+<a href="{{ panelist\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
 </div>
 <img src="{{ panelist\['Red Image'\] }}" alt="{{ panelist.title }}" class="avatar" />
 </div>
@@ -90,8 +90,8 @@ layout: default
 ">
 <div class="speaker-image relative">
 <div class="speaker-links">
-<a href="{{ panelist\['Website URL'\] }}" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-<a href="{{ panelist\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+<a href="{{ panelist\['Website URL'\] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
+<a href="{{ panelist\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
 </div>
 <img src="{{ panelist\['Red Image'\] }}" alt="{{ panelist.title }}" class="avatar" />
 </div>
@@ -110,15 +110,15 @@ layout: default
 <h5 class="corner-name ta-right">Dave Onkels<br/><span>Squares Emcee</span></h5>
 <div class="speaker-image relative">
 <div class="speaker-links">
-<a href="http://ovenbits.com" target="_blank" class="btn_website"><img src="http://squaresconference.com/2017/images/icon-website.png" alt="Website" /></a>
-<a href="http://twitter.com/daveonkels" target="_blank" class="btn_twitter"><img src="http://squaresconference.com/2017/images/icon-twitter.png" alt="Twitter" /></a>
+<a href="http://ovenbits.com" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
+<a href="http://twitter.com/daveonkels" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
 </div>
-<img src="http://squaresconference.com/2017/images/dave-onkels.jpg" alt="Dave Onkels" class="avatar" />
+<img src="/assets/images/dave-onkels.jpg" alt="Dave Onkels" class="avatar" />
 </div>
 </div>
 <div class="right relative">
 <h6 class="rotate-right">Photo by Cory Hale</h6>
-<img src="http://squaresconference.com/2017/images/crowd-1.jpg" alt="Squares Crowd" />
+<img src="/assets/images/crowd-1.jpg" alt="Squares Crowd" />
 </div>
 <div class="push"></div>
 </div>
