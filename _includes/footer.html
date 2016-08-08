@@ -96,7 +96,7 @@
 				<ul class="right">
 					{% assign menu_items = site.pages | sort: "position" %}
 					{% for menu_item in menu_items %}
-						<li><a href="{{ menu_item.permalink }}" class="menuLink">{{ menu_item.title }}</a></li>
+						<li><a href="{{ menu_item.url }}" class="menuLink">{{ menu_item.title }}</a></li>
 					{% endfor %}
 					<li><a href="#Sponsors" class="anchorLink menuLink">Sponsors</a></li>
 				</ul>
