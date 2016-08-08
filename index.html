@@ -1,18 +1,86 @@
----
-title: Home
-date: 2016-08-03 22:50:00 -04:00
-permalink: "/"
-position: 0
-SEO:
-  Title: 'Squares Conference: A design & dev conference by Circles Co.'
-Body Class: home
-Hero Image: assets/images/hero-home.jpg
-Hero Home Text: A design & dev<br />conference by <a href="http://circlesco.com" target="_blank">Circles
-  Co.</a><br /><span>creators of Circles Conference</span>
-layout: default
----
+<!DOCTYPE html>
+<html lang="en"> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+		<title>Squares Conference: A design & dev conference by Circles Co.</title> 
 
-<div class="what-is-squares">
+		<meta name="description" content="" /> 
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width; initial-scale=1">
+
+		<meta property="og:title" content="Squares Conference: A design & dev conference by Circles Co.>" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="/" />
+		<meta property="og:image" content="/assets/images/facebook_icon.png" />
+
+		<link rel="stylesheet" href="/assets/css/screen.css" media="screen" type="text/css" /> 
+		<link rel="stylesheet" href="/assets/css/magnific-popus.css" media="screen" type="text/css" /> 
+
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+		<link rel="apple-touch-icon-precomposed" href="/ipad_icon.png" />
+
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/anchor.js""></script>
+		<script type="text/javascript" src="/assets/js/infieldlabel.js""></script>
+		<script type="text/javascript" src="/assets/js/bootstrap.scrollspy.js""></script>
+		<script type="text/javascript" src="/assets/js/waypoint.js""></script>
+		<script type="text/javascript" src="/assets/js/jquery.magnific-popup.js""></script> 
+		<script type="text/javascript" src="/assets/js/emails-and-forms.js""></script>
+
+		<script src="https://use.typekit.net/yde4jdg.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head> 
+ 
+<body class="home">
+
+<a href="javascript: void(0);" id="btnMenu">
+	<div id="nav-icon4">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</a>
+
+<div class="fixed-register">
+	<a href="Jekyll::Drops::SiteDrop">register</a>
+</div>
+
+<div id="divTop" class="header_wrap relative bg-image" 
+	
+	style="background-image: url(assets/images/hero-home.jpg)"
+	>
+	<div class="header">
+		<h3 class="hero-date rotate-right small-titles">April 26-28, 2017</h3>
+		<h3 class="hero-location rotate-right small-titles">Grapevine, TX</h3>
+		
+		<div class="register-wrap">
+			<h5 class="pad-l-80">Be Square. Register today.</h5>
+			<a href="http://squaresconference.com/register" class="button-register"><img src="/assets/images/black-arrow.svg" alt="Register Today" /></a>
+			<div class="push"></div>
+		</div>
+		<h6>Photo by Cory Hale</h6>
+	</div>
+	<div class="squares-logo">
+			<div class="squares-empty"></div>
+			<div class="squares-container">
+					<a href="http://squaresconference2017.siteleaf.net"><img src="/assets/images/logo-squares.png" alt="Squares Conference" /></a>
+			</div>
+	</div>
+	<div class="red-border">
+		
+			<h4><A design & dev<br />conference by <a href="http://circlesco.com" target="_blank">Circles Co.</a><br /><span>creators of Circles Conference</span></h4>
+		
+		<div class="squares-empty"></div>
+		<div class="squares-container">
+		</div>
+	</div>
+	<div class="push"></div>
+	<a href="#divArrow" class="anchorLink btn-arrow"><img src="/assets/images/btn-arrow.png" alt="View More" /></a>
+</div>
+<div class="content_wrap" id="divArrow">
+	<div class="content">
+
+	<div class="what-is-squares">
 	<div class="right relative">
 		<div class="what-right pad-80">
 			<p><b>What is Squares?</b> It's a three-day gathering of techies from around the world. Learn from leaders, designers and innovators in both the non-profit and tech community. It's a great place to mingle with others who share the same passions you do.</p>	
@@ -39,25 +107,61 @@ layout: default
 <div class="home-speakers-wrap pad-tb-180 relative">
 	<div class="section home-speakers relative">
 		<h2 class="small-titles red rotate">Speakers</h2>
-		{% assign featured_speakers = site.speakers | where: "Is Featured", true %}
-		{% for speaker in featured_speakers %}
-			<div class="panel speaker-panel {% cycle '', '', '', 'last' %}">
+		
+		
+			<div class="panel speaker-panel ">
 				<div class="speaker-image relative">
 					<div class="speaker-links">
-						<a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="assets/images/icon-website.png" alt="Website" /></a>
-						<a href="{{ speaker['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="assets/images/icon-twitter.png" alt="Twitter" /></a>
+						<a href="https://t.co/ADc1hUtzt9" target="_blank" class="btn_website"><img src="assets/images/icon-website.png" alt="Website" /></a>
+						<a href="https://twitter.com/Una" target="_blank" class="btn_twitter"><img src="assets/images/icon-twitter.png" alt="Twitter" /></a>
 					</div>
-					<img src="{{ speaker['Featured Image'] }}" alt="{{ speaker.title }}" class="avatar" />
+					<img src="/uploads/una-grey.jpg" alt="Una Kravets" class="avatar" />
 				</div>
-				<h2>{{ speaker.title }}</h2>
-				<h3>{{ speaker['Job Title'] }}</h3>
+				<h2>Una Kravets</h2>
+				<h3>ui engineer at DigitalOcean</h3>
 			</div>
-		{% endfor %}
+		
+			<div class="panel speaker-panel ">
+				<div class="speaker-image relative">
+					<div class="speaker-links">
+						<a href="http://greysonmacalpine.dribbble.com/" target="_blank" class="btn_website"><img src="assets/images/icon-website.png" alt="Website" /></a>
+						<a href="https://twitter.com/greysonsofia" target="_blank" class="btn_twitter"><img src="assets/images/icon-twitter.png" alt="Twitter" /></a>
+					</div>
+					<img src="/uploads/greyson.jpg" alt="Greyson MacAlpine" class="avatar" />
+				</div>
+				<h2>Greyson MacAlpine</h2>
+				<h3>product designer at UENO</h3>
+			</div>
+		
+			<div class="panel speaker-panel ">
+				<div class="speaker-image relative">
+					<div class="speaker-links">
+						<a href="https://t.co/GSLu64sKBG" target="_blank" class="btn_website"><img src="assets/images/icon-website.png" alt="Website" /></a>
+						<a href="https://twitter.com/aaroni" target="_blank" class="btn_twitter"><img src="assets/images/icon-twitter.png" alt="Twitter" /></a>
+					</div>
+					<img src="/uploads/speaker-placeholder.jpg" alt="Aaron Irizarry" class="avatar" />
+				</div>
+				<h2>Aaron Irizarry</h2>
+				<h3>Director of ux at Nasdaq</h3>
+			</div>
+		
+			<div class="panel speaker-panel last">
+				<div class="speaker-image relative">
+					<div class="speaker-links">
+						<a href="http://brdrck.me/" target="_blank" class="btn_website"><img src="assets/images/icon-website.png" alt="Website" /></a>
+						<a href="https://twitter.com/brdrck" target="_blank" class="btn_twitter"><img src="assets/images/icon-twitter.png" alt="Twitter" /></a>
+					</div>
+					<img src="/uploads/jeff.jpg" alt="Jeff Broderick" class="avatar" />
+				</div>
+				<h2>Jeff Broderick</h2>
+				<h3>senior product designer at Weebly</h3>
+			</div>
+		
 		<div class="push"></div>
-		{% assign speakers_page = site.pages | where: "title", "Speakers" %}
-		{% for speaker_page in speakers_page %}
-			<h3 class="small-titles grey rotate-right"><a href="{{ speaker_page.permalink }}">View all speakers</a></h3>
-		{% endfor %}
+		
+		
+			<h3 class="small-titles grey rotate-right"><a href="/speakers">View all speakers</a></h3>
+		
 	</div>
 	<div class="square-border side-right grey"></div>
 </div>
@@ -77,10 +181,158 @@ layout: default
 					<h4>starting at</h4>
 					<h5>$195</h5>
 				</div>
-				<a href="{{ site['Registration URL'] }}" target="_blank" class="button">Register Today</a>
+				<a href="http://squaresconference.com/register" target="_blank" class="button">Register Today</a>
 				<div class="push"></div>
 			</div>
 		</div>
 	</div>
 	<div class="push"></div>
 </div>
+
+	</div> <!-- end .content -->
+</div> <!-- end .content_wrap -->
+
+<div class="sponsor-wrap pad-tb-140 relative" id="Sponsors">
+	<div class="section">
+		<ul class="sponsors-big">
+			
+			
+			<li class="pad-tb-40">
+				<a href="#" target="_blank"><img src="/assets/images/s-mailchimp.png" alt="MailChimp" /></a>
+			</li>
+			
+			<li class="pad-tb-40">
+				<a href="" target="_blank"><img src="/assets/images/s-flywheel.png" alt="Flywheel" /></a>
+			</li>
+			
+			<li class="pad-tb-40">
+				<a href="#" target="_blank"><img src="/assets/images/s-invision.png" alt="Invision" /></a>
+			</li>
+			
+			<li class="pad-tb-40">
+				<a href="#" target="_blank"><img src="/assets/images/s-salesforce.png" alt="Salesforce" /></a>
+			</li>
+			
+			<div class="push"></div>
+		</ul>
+		<hr class="marg-b-40 white marg-t-40 divider" />
+		<ul class="sponsors-small pad-b-140">
+			
+			
+			<li class="pad-tb-40">
+				<a href="#" target="_blank"><img src="/assets/images/s-myfonts.png" alt="MyFonts" /></a>
+			</li>
+			
+			<li class="pad-tb-40 empty">
+				<a href="https://circlesco.com/conference/sponsors" target="_blank"><img src="/assets/images/s-empty.png" alt="This Could Be You" /></a>
+			</li>
+			<div class="push"></div>
+		</ul>
+	</div>
+	<div class="section no-sponsors pad-b-120 ta-center">
+		<h2 class="titles">become a sponsor</h2>
+		<p class="small-titles"><a href="#" target="_blank">download pdf</a> <span>/</span> <a href="#" target="_blank">get started</a></p>
+	</div>
+	<hr class="divider black" />
+	<div class="section pad-t-140">
+		<div class="partner-logos relative">
+			<h2 class="small-titles rotate">Partners</h2>
+			
+			
+				<a href="#" target="_blank"><img src="/assets/images/p-aiga.png" alt="AIGA DFW" /></a>
+			
+			<div class="push"></div>
+		</div>
+	</div>
+	<div class="square-border side-left white"></div>
+</div>
+
+<div class="update-wrap bg-white">
+	<div class="section pad-tb-180">
+		<div class="email-wrap left">
+			<h2 class="titles">Stay Updated</h2>
+			<div class="email relative">
+				<div id="divEmail">
+					<form action="//circlescompany.createsend.com/t/j/s/mhdcu/" method="post" id="formEmail">
+						<label for="email-signup" class="infieldlabel">email address</label>
+						<input type="text" name="cm-mhdcu-mhdcu" id="email-signup" class="email-input" />
+						<input type="submit" name="submit" value="join" class="email-button" />
+					</form>
+				</div>
+				<div id="divEmailConfirmation">
+					<h2>Thank You</h2>
+				</div>
+			</div>
+			<div class="push"></div> 
+		</div>
+		<div class="or left">
+			<h2 class="titles ta-center">or</h2>
+		</div>
+		<a href="http://squaresconference.com/register" target="_blank" class="button bs">Register Today</a>
+		<div class="push"></div>
+	</div>	
+</div>
+
+<div class="bottom">
+	<div class="section relative">
+		<div class="circles-logo"><img src="/assets/images/logo-squares-small.png" alt="Squares" /></div>
+		<hr class="marg-b-80 marg-t-80 divider" />
+		<ul class="footer-meta">
+			<li>April 26-28, 2017</li>
+			<li class="middle"><span>Grapevine, TX</span></li>
+			<li><a href="http://squaresconference.com/register" target="_blank">Register Today</a></li>
+		</ul>
+		<div class="circles-half"><img src="/assets/images/squares-half.png" alt="Squares" /></div>
+	</div>
+</div>
+<div class="footer">
+	<p class="copyright">&copy; Copyright 16 Circles Company
+. All rights reserved. <a href="http://squaresconference.com/refund-policy" target="_blank">Refund Policy</a>&nbsp;/&nbsp;<a href="http://squaresconference.com/conduct" target="_blank">Code of Conduct</a>&nbsp;/&nbsp;<a href="mailto:hello@squaresconference.com" target="_blank">Contact Us</a></p>
+	<p class="copyright right">Designed by Ismael Burciaga of <a href="http://reblventures.com" target="_blank">REBL</a></p>
+	<div class="push"></div>
+</div>
+
+<div class="menu-wrapper pad-20" id="menuOverlay">
+	<div class="menu-wrapper-2">
+		<div class="menu-wrap">
+			<h2 class="title-menu">Menu</h2>
+			<div class="menu-content">
+				<ul class="right">
+					
+					
+						<li><a href="/feed.xml" class="menuLink"></a></li>
+					
+						<li><a href="/" class="menuLink">Home</a></li>
+					
+						<li><a href="/speakers/" class="menuLink">Speakers</a></li>
+					
+						<li><a href="/workshops/" class="menuLink">Workshops</a></li>
+					
+						<li><a href="/venue/" class="menuLink">Venue</a></li>
+					
+						<li><a href="/about/" class="menuLink">About</a></li>
+					
+						<li><a href="/schedule/" class="menuLink">Schedule</a></li>
+					
+					<li><a href="#Sponsors" class="anchorLink menuLink">Sponsors</a></li>
+				</ul>
+				<div class="left">
+					<p>Squares is a three-day experience for you, the maker. The conference brings designers and makers from across the globe together for the dual purpose of learning from world-changing thinkers and innovators and connecting with one another.</p>
+					<a href="http://squaresconference.com/register" target="_blank" class="button">REGISTER</a>
+					<div class="social-menu">
+						<h2 class="titles serif">Follow Us</h2>
+						<div class="social-menu-icons">
+							<a href="" target="_blank"><img src="/assets/images/menu-t.png" alt="Twitter" /></a>
+							<a href="" target="_blank"><img src="/assets/images/menu-fb.png" alt="Facebook" /></a>
+							<a href="" target="_blank" class="last"><img src="/assets/images/menu-i.png" alt="Instagram" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="push"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body> 
+</html>
