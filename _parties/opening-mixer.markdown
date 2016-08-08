@@ -5,6 +5,6 @@ Location Name: Back Porch Tavern & Grill
 Address Text: |-
   210 N. Main Street
   Grapevine, TX 76501
-Date/Time: Wednesday, April 26th - 7pm
+Date: 2017-04-26 19:00:00 -04:00
 ---
 
