@@ -42,12 +42,13 @@ layout: default
 	<div class="right relative">
 		<h2 class="small-titles red rotate-right up">Parties</h2>
 		<div class="absolute bs pad-120">
-			{% for party in site.parties %}
+			{% assign parties = site.parties | sort: "position" %}
+			{% for party in parties %}
 				{% assign last = forloop.last %}
 				<div class="parties">
-					<h2>Opening Mixer</h2>
-					<h3 class="small-titles">Wednesday, April 26th - 7 pm</h3>
-					<p>Back Porch Tavern &amp; Grill<br />210 N. Main Street<br />Grapevine, TX 76501</p>
+					<h2>{{ party.title }}</h2>
+					<h3 class="small-titles">{{ party.Date | date: "%A, %B %-d - %l %P" }}</h3>
+					<p>{{ party['Location Name'] }}<br />{{ party['Address Text'] }}</p>
 				</div>
 				{% if last == false %}
 				<hr class="marg-b-40 marg-t-40 divider ta-left" />
