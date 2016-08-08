@@ -8,7 +8,7 @@ SEO:
 Body Class: venue
 Hero Text: Venue<br><span>&amp; Parties
 Hero Image: "/assets/images/hero-venue.jpg"
-layout: venue
+layout: default
 ---
 
 <div class="section pad-t-120 pad-b-140">
