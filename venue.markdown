@@ -8,7 +8,7 @@ SEO:
 Body Class: venue
 Hero Text: Venue<br><span>&amp; Parties
 Hero Image: "/assets/images/hero-venue.jpg"
-layout: venue
+layout: default
 ---
 
 <div class="section pad-t-120 pad-b-140">
@@ -56,7 +56,7 @@ layout: venue
 				{% assign last = forloop.last %}
 				<div class="parties">
 					<h2>{{ party.title }}</h2>
-					<h3 class="small-titles">{{ party.Date | date: "%A, %B %-d - %I" }} {{ party.Date | date: "%p" }}</h3>
+					<h3 class="small-titles">{{ party.Date | date: "%A, %B %-d - %l %P" }}</h3>
 					<p>{{ party['Location Name'] }}<br />{{ party['Address Text'] }}</p>
 				</div>
 				{% if last == false %}
