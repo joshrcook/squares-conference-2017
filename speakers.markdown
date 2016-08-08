@@ -14,8 +14,8 @@ layout: default
     <div class="section home-speakers page-speakers relative">
         <h2 class="small-titles red rotate">Speakers</h2> {% assign speakers = site.speakers | sort: "position" %} {% for speaker in speakers %}
         <div class="panel speaker-panel
-{% cycle 'big', 'second', 'last', '', 'last' %}
-">
+        {% cycle 'big', 'second', 'last', '', 'last' %}
+        ">
             <div class="speaker-image relative">
                 <div class="speaker-links">
                     <a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" />
@@ -25,8 +25,8 @@ layout: default
                 </div>
 
                 {% assign is_red = forloop.index0 | modulo: 5 %} {% if is_red == 0 %}
-                <img src="/assets/images/speaker-red.jpg" alt="Speaker Name" class="avatar" /> {% else %}
-                <img src="/assets/images/speaker-placeholder.jpg" alt="Speaker Name" class="avatar" /> {% endif %}
+                <img src="{{ speaker['Red Image'] }}" alt="Speaker Name" class="avatar" /> {% else %}
+                <img src="{{ speaker['Featured Image'] }}" alt="Speaker Name" class="avatar" /> {% endif %}
             </div>
             <h2>{{ speaker.title }}</h2>
             <h3>{{ speaker['Job Title'] }}</h3>
