@@ -20,8 +20,8 @@ layout: default
 ">
 <div class="speaker-image relative">
 <div class="speaker-links">
-<a href="{{ speaker\['Website URL'\] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
-<a href="{{ speaker\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
+<a href="{{ speaker['Website URL'] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
+<a href="{{ speaker['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
 </div>
 
                     {% assign is_red = forloop.index0 | modulo: 5 %}
@@ -58,13 +58,13 @@ layout: default
 ">
 <div class="speaker-image relative">
 <div class="speaker-links">
-<a href="{{ panelist\['Website URL'\] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
-<a href="{{ panelist\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
+<a href="{{ panelist['Website URL'] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
+<a href="{{ panelist['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
 </div>
-<img src="{{ panelist\['Red Image'\] }}" alt="{{ panelist.title }}" class="avatar" />
+<img src="{{ panelist['Red Image'] }}" alt="{{ panelist.title }}" class="avatar" />
 </div>
 <h2>{{ panelist.title }}</h2>
-<h3>{{ panelist\['Job Title'\] }}</h3>
+<h3>{{ panelist['Job Title'] }}</h3>
 </div>
 {% endfor %}
 <div class="push"></div>
@@ -90,13 +90,13 @@ layout: default
 ">
 <div class="speaker-image relative">
 <div class="speaker-links">
-<a href="{{ panelist\['Website URL'\] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
-<a href="{{ panelist\['Twitter URL'\] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
+<a href="{{ panelist['Website URL'] }}" target="_blank" class="btn_website"><img src="/assets/images/icon-website.png" alt="Website" /></a>
+<a href="{{ panelist['Twitter URL'] }}" target="_blank" class="btn_twitter"><img src="/assets/images/icon-twitter.png" alt="Twitter" /></a>
 </div>
-<img src="{{ panelist\['Red Image'\] }}" alt="{{ panelist.title }}" class="avatar" />
+<img src="{{ panelist['Red Image'] }}" alt="{{ panelist.title }}" class="avatar" />
 </div>
 <h2>{{ panelist.title }}</h2>
-<h3>{{ panelist\['Job Title'\] }}</h3>
+<h3>{{ panelist['Job Title'] }}</h3>
 </div>
 {% endfor %}
 <div class="push"></div>
