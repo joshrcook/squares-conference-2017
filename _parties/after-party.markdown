@@ -5,6 +5,6 @@ Location Name: Delaney Vinyards
 Address Text: |-
   2000 Champagne Blvd
   Grapevine, TX 76501
-Date: 2017-04-27 00:00:00 -04:00
+Date: 2017-04-27 19:30:00 -04:00
 ---
 
