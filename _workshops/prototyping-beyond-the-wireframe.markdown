@@ -2,6 +2,7 @@
 title: 'Prototyping: Beyond The Wireframe'
 date: 2016-08-06 01:26:00 -04:00
 Category: Design
+Track: 1
 Time: 1 hr
 Teacher:
   Name: Michael Wilson
